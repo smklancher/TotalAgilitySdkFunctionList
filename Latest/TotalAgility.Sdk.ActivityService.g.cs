@@ -74,5 +74,6 @@ namespace TotalAgility.Sdk
         public Agility.Sdk.Model.Server.JsonPayload GenerateSdkJsonPayload(string sessionId, string methodName, Agility.Sdk.Model.Processes.ProcessIdentity processIdentity, short nodeId, Agility.Sdk.Model.CaseProcesses.CaseIdentity caseIdentity) => throw null;
         public Agility.Sdk.Model.Server.JsonPayload GenerateRestSdkJsonPayload(string sessionId, string serviceUrl, Agility.Sdk.Model.Processes.ProcessIdentity processIdentity, short nodeId, Agility.Sdk.Model.CaseProcesses.CaseIdentity caseIdentity) => throw null;
         public Agility.Sdk.Model.Activities.ActivitiesSummaryResults GetActivitiesSummaryWithQueryAndMergedFilter(string sessionId, Agility.Sdk.Model.Queries.QueryIdentity queryIdentity, Agility.Sdk.Model.Activities.ActivityField groupByField, Agility.Sdk.Model.Activities.JobActivityFilterOverride activityFilterOverride) => throw null;
+        public object GetActivitiesAggregateWithQueryAndMergedFilter(string sessionId, Agility.Sdk.Model.Queries.QueryIdentity queryIdentity, short aggregateType, short aggregateStandardField, string aggregateMetadataField, Agility.Sdk.Model.Activities.JobActivityFilterOverride activityFilterOverride) => throw null;
     }
 }

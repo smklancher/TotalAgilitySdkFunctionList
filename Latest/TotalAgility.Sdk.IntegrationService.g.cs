@@ -24,5 +24,6 @@ namespace TotalAgility.Sdk
         public Agility.Sdk.Model.Integration.IntegrationDataCollection GetIntegrationMetadata(string sessionId, Agility.Sdk.Model.Integration.IntegrationSiteSummary integrationSite, Agility.Sdk.Model.Integration.IntegrationEventIdentity2 integrationEvent) => throw null;
         public Agility.Sdk.Model.Integration.IntegrationSiteValidationResults ValidateIntegrationSite(string sessionId, Agility.Sdk.Model.Integration.IntegrationSite integrationSite) => throw null;
         public Agility.Sdk.Model.Integration.IntegrationAssociationCollection GetIntegrationAssociations(string sessionId, string siteName, short integrationType) => throw null;
+        public Agility.Sdk.Model.Integration.IntegrationSiteCollection GetIntegrationSites2(string sessionId, Agility.Sdk.Model.Integration.IntegrationAddInIdentity addInEntity, string categoryId) => throw null;
     }
 }

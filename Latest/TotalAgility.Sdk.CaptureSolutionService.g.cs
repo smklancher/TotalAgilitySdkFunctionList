@@ -22,7 +22,6 @@ namespace TotalAgility.Sdk
         public Agility.Sdk.Model.CaptureSolutions.CaptureSolutionArtefacts GetAssociatedArtefacts(string sessionId, Agility.Sdk.Model.CaptureSolutions.CaptureSolutionIdentity captureSolutionIdentity) => throw null;
         public Agility.Sdk.Model.CaptureSolutions.Extraction.ExtractionTrainingResultCollection TrainAndExtract(string sessionId, string captureProjectId, Agility.Sdk.Model.CaptureSolutions.DocumentTypeCollection documentTypes) => throw null;
         public bool IsTransformationServerInstanceAvailable(string sessionId) => throw null;
-        public Agility.Sdk.Model.Processes.AllowedProcessCollection GetExposedProcesses(string sessionId) => throw null;
         public Agility.Sdk.Model.CaptureSolutions.PredefinedDocumentTypeCollection GetPredefinedDocumentTypes(string sessionId) => throw null;
         public Agility.Sdk.Model.CaptureSolutions.Classification.ClassificationTestResultCollection TestClassification(string sessionId, Agility.Sdk.Model.CaptureSolutions.CaptureSolution captureSolution, Agility.Sdk.Model.CaptureSolutions.CaptureDocumentCollection testDocuments) => throw null;
         public Agility.Sdk.Model.CaptureSolutions.Extraction.DocumentTrainAndExtractResultCollection TestExtraction(string sessionId, Agility.Sdk.Model.CaptureSolutions.DocumentType documentType, Agility.Sdk.Model.CaptureSolutions.CaptureDocumentCollection testDocuments) => throw null;

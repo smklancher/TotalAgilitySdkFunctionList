@@ -12,6 +12,7 @@ namespace TotalAgility.Sdk
         public Agility.Sdk.Model.Integration.GenerativeAI.AIProvider GetAIProvider(string sessionId, Agility.Sdk.Model.Integration.GenerativeAI.AIProviderIdentity providerIdentity) => throw null;
         public Agility.Sdk.Model.Integration.GenerativeAI.AIProvider GetAIProviderForCoPilot(string sessionId) => throw null;
         public Agility.Sdk.Model.Integration.GenerativeAI.AIProvider GetAIProviderForExtraction(string sessionId) => throw null;
+        public Agility.Sdk.Model.Integration.GenerativeAI.AIProvider GetAIProviderForClassification(string sessionId) => throw null;
         public Agility.Sdk.Model.Integration.GenerativeAI.AIProviderSummaryCollection GetAIProviders(string sessionId, Agility.Sdk.Model.Integration.GenerativeAI.AIProviderFilter filter) => throw null;
         public Agility.Sdk.Model.Server.WorkerTaskIdentity GenerateItemAsync(string sessionId, Agility.Sdk.Model.Server.StringCollection inputPrompts, short aiGroupingType) => throw null;
         public Agility.Sdk.Model.Server.WorkerTaskIdentity RegenerateItemAsync(string sessionId, string existingItemJson, Agility.Sdk.Model.Server.StringCollection inputPrompts, short aiGroupingType) => throw null;
@@ -37,5 +38,9 @@ namespace TotalAgility.Sdk
         public Agility.Sdk.Model.Integration.GenerativeAI.GeneratedDecisionTable GetGeneratedDecisionTable(string sessionId, Agility.Sdk.Model.Server.WorkerTaskIdentity workerTaskIdentity) => throw null;
         public string ExecuteAddUpdateDocsRagActivity(string sessionId, Agility.Sdk.Model.Integration.RagAI.AddUpdateDocsRagActivitySettings settings) => throw null;
         public Agility.Sdk.Model.Integration.RagAI.RagSearchOutput ExecuteRagSearch2(string sessionId, Agility.Sdk.Model.Integration.RagAI.RagSearchInput input) => throw null;
+        public Agility.Sdk.Model.Integration.GenerativeAI.GenerativeAIOutput ExecuteWordCloudControlPrompt(string sessionId, Agility.Sdk.Model.Integration.GenerativeAI.WordCloudPromptInputs inputs) => throw null;
+        public void AddMCPServer(string sessionId, Agility.Sdk.Model.Integration.MCP.MCPServer mcpServer) { }
+        public void UpdateMCPServer(string sessionId, Agility.Sdk.Model.Integration.MCP.MCPServer mcpServer) { }
+        public void DeleteMCPServer(string sessionId, Agility.Sdk.Model.Integration.IntegrationSiteIdentity integrationSiteIdentity) { }
     }
 }

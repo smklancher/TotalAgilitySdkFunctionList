@@ -11,5 +11,6 @@ namespace TotalAgility.Sdk
         public void DeleteOCRProvider(string sessionId, Agility.Sdk.Model.Integration.OCR.OCRProviderIdentity OCRProviderIdentity) { }
         public Agility.Sdk.Model.Integration.OCR.OCRProvider GetOCRProvider(string sessionId, Agility.Sdk.Model.Integration.OCR.OCRProviderIdentity OCRProviderIdentity) => throw null;
         public Agility.Sdk.Model.Integration.OCR.OCRProviderCollection GetOCRProviders(string sessionId) => throw null;
+        public Agility.Sdk.Model.Integration.OCR.OCRProvider GetOCRProviderForExtraction(string sessionId, Agility.Sdk.Model.Integration.OCR.OCRProviderIdentity providerIdentity) => throw null;
     }
 }
