@@ -129,6 +129,7 @@ namespace TotalAgility.Sdk
         public void UpdateWords(string sessionId, Agility.Sdk.Model.Capture.ReportingData reportingData, string documentId, string pageId, Agility.Sdk.Model.Capture.WordUpdateCollection wordUpdates) { }
         public Agility.Sdk.Model.Capture.WordCollection GetWordsInRectangle(string sessionId, Agility.Sdk.Model.Capture.WordCollection words, int top, int left, int height, int width) => throw null;
         public Agility.Sdk.Model.Capture.Annotations.AnnotationDataCollection GetAnnotations(string sessionId, string documentId) => throw null;
+        public Agility.Sdk.Model.Capture.Annotations.AnnotationDataCollection GetAnnotations2(string sessionId, string documentId) => throw null;
         public void DeleteExtension(string sessionId, Agility.Sdk.Model.Capture.ReportingData reportingData, string documentId, string name) { }
         public void SaveBinaryExtension(string sessionId, Agility.Sdk.Model.Capture.ReportingData reportingData, string documentId, string name, string mimeType, byte[] data) { }
         public Agility.Sdk.Model.Capture.BinaryData GetBinaryExtension(string sessionId, Agility.Sdk.Model.Capture.ReportingData reportingData, string documentId, string name) => throw null;

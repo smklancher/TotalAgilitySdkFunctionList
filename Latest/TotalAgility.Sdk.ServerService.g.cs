@@ -130,7 +130,7 @@ namespace TotalAgility.Sdk
         public byte[] ExportPackage(string sessionId, Agility.Sdk.Model.Package.PackageExportOptions options) => throw null;
         public void ImportPackage(Agility.Sdk.Model.Package.ImportPackageParameter importParameter) { }
         public Agility.Sdk.Model.Package.PackageInformation GetPackageInformation(string sessionId, byte[] packageData) => throw null;
-        public Agility.Sdk.Model.Server.LoopOutput ExecuteLoop(string sessionId, object complexVariableValue, int numberOfColumns, int startIndex, Agility.Sdk.Model.Variables.ComplexVarColumnMappingCollection varMembers) => throw null;
+        public Agility.Sdk.Model.Server.LoopOutput ExecuteLoop(string sessionId, object complexVariableValue, int numberOfColumns, double startIndex, Agility.Sdk.Model.Variables.ComplexVarColumnMappingCollection varMembers) => throw null;
         public void SendEmail(string sessionId, Agility.Sdk.Model.Email.EmailInfo emailInfo, string smtpServerName) { }
         public void SendEmail2(string sessionId, Agility.Sdk.Model.Email.EmailInfo2 emailInfo) { }
         public void SendEmail3(string sessionId, Agility.Sdk.Model.Email.EmailInfo3 emailInfo, string smtpServerName, Agility.Sdk.Model.Variables.InputVariableCollection inputVariables) { }
@@ -218,5 +218,8 @@ namespace TotalAgility.Sdk
         public Agility.Sdk.Model.Server.MachineServiceCollection GetMachineServices(string sessionId, Agility.Sdk.Model.Server.MachineServiceFilter machineServiceFilter) => throw null;
         public Agility.Sdk.Model.Server.StringCollection EncryptStrings(string sessionId, Agility.Sdk.Model.Server.StringCollection unencryptedData) => throw null;
         public Agility.Sdk.Model.Capture.Import.MessageConnectorPoolIdentityCollection GetMessageConnectorPoolIdentities(string sessionId) => throw null;
+        public void SaveCustomSecurityStorageSettings(string sessionId, Agility.Sdk.Model.Server.CustomSecureStorageProcesses customSecureStorageProcesses) { }
+        public string GetHelpURL(string sessionId) => throw null;
+        public string GetKCMDesignerURL(string sessionId) => throw null;
     }
 }

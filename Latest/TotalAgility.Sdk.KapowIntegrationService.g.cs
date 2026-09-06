@@ -9,5 +9,9 @@ namespace TotalAgility.Sdk
         public Agility.Sdk.Model.Integration.KapowProjectIdentityCollection GetProjects(string sessionId, Agility.Sdk.Model.Integration.IntegrationSiteIdentity siteIdentity) => throw null;
         public Agility.Sdk.Model.Integration.KapowRobotIdentityCollection GetRobots(string sessionId, Agility.Sdk.Model.Integration.IntegrationSiteIdentity siteIdentity, Agility.Sdk.Model.Integration.KapowProjectIdentity projectIdentity) => throw null;
         public Agility.Sdk.Model.Component.DotNetMethod InterrogateRobotComponentMethod(string sessionId, Agility.Sdk.Model.Integration.IntegrationSiteIdentity siteIdentity, Agility.Sdk.Model.Integration.KapowRobotIdentity robotIdentity) => throw null;
+        public Agility.Sdk.Model.QuickRPA.RPAProjectIdentityCollection GetQuickRpaProjects(string sessionId, Agility.Sdk.Model.Integration.IntegrationSiteIdentity siteIdentity) => throw null;
+        public Agility.Sdk.Model.QuickRPA.RPARobotSummaryCollection GetQuickRpaRobots(string sessionId, Agility.Sdk.Model.Integration.IntegrationSiteIdentity siteIdentity, Agility.Sdk.Model.QuickRPA.RPAProjectIdentity projectIdentity, string inputTypeName) => throw null;
+        public Agility.Sdk.Model.QuickRPA.RPARobotSignature GetQuickRpaRobotSignature(string sessionId, Agility.Sdk.Model.Integration.IntegrationSiteIdentity siteIdentity, Agility.Sdk.Model.QuickRPA.RPAProjectIdentity projectIdentity, Agility.Sdk.Model.QuickRPA.RPARobotIdentity robotIdentity, short processInputDataObject, bool multipleItemsReturned) => throw null;
+        public string ExecuteRPANode(string sessionId, Agility.Sdk.Model.QuickRPA.RPARobotSettings robotSettings) => throw null;
     }
 }

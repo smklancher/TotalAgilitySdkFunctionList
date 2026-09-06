@@ -8,5 +8,6 @@ namespace TotalAgility.Sdk
         public ExchangeIntegrationService(System.ServiceModel.Channels.Binding binding) { }
         public Agility.Sdk.Model.Server.StringCollection GetEmailAttachments(string sessionId, string emailUniqueId, string targetLocation, string integrationSiteId) => throw null;
         public Agility.Sdk.Model.Server.StringCollection GetEmailAttachments2(string sessionId, string emailUniqueId, string targetLocation, string integrationSiteId, string siteName) => throw null;
+        public Agility.Sdk.Model.Integration.Exchange.GetAttachmentsOutput GetEmailAttachments3(string sessionId, Agility.Sdk.Model.Integration.Exchange.GetAttachmentsInput getAttachmentsInput) => throw null;
     }
 }

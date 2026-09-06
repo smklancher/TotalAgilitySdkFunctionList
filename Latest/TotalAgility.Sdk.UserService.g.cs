@@ -32,5 +32,6 @@ namespace TotalAgility.Sdk
         public Agility.Sdk.Model.Users.Session GetSingleSignOnSession(string systemSessionId, Agility.Sdk.Model.Users.UserIdentity2 userIdentity) => throw null;
         public string FederatedLogOff(string sessionId) => throw null;
         public Agility.Sdk.Model.Authentication.AuthenticationProvidersForSignIn2 GetFederatedAuthenticationProvidersForSignIn2(string callbackUrl, short callbackProtocol, string origin) => throw null;
+        public string GetHomePageUrl(string sessionId) => throw null;
     }
 }

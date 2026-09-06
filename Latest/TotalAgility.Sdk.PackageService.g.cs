@@ -28,6 +28,7 @@ namespace TotalAgility.Sdk
         public Agility.Sdk.Model.SpaPackages.SpaPackageData GetPackageDataForAssociations2(string sessionId, Agility.Sdk.Model.SpaPackages.SpaPackageItemCollection spaPackageItems, Agility.Sdk.Model.SpaPackages.ItemAssociationsOptions itemAssociations) => throw null;
         public Agility.Sdk.Model.SpaPackages.SpaPackageData SearchPackageArtifacts(string sessionId, Agility.Sdk.Model.SpaPackages.PackageArtifactFilter packageArtifactFilter) => throw null;
         public Agility.Sdk.Model.Resources.ResourceIdentityCollection GetRoleMembers(string sessionId, Agility.Sdk.Model.SpaPackages.SpaPackageItemCollection spaPackageItemCollection) => throw null;
+        public Agility.Sdk.Model.SpaPackages.SpaPackageVersionCollection GetSpaPackageVersions(string sessionId, Agility.Sdk.Model.SpaPackages.SpaPackageIdentity packageIdentity) => throw null;
         public Agility.Sdk.Model.SpaPackages.PackageDeploymentItems GetDeploymentItemsForPackage(string sessionId, Agility.Sdk.Model.SpaPackages.SpaPackageItemCollection spaPackageItems, bool includeDeviceSettings) => throw null;
         public Agility.Sdk.Model.SpaPackages.PackageDeploymentIdentityCollection GetPackageDeployments(string sessionId, Agility.Sdk.Model.SpaPackages.SpaPackageIdentity packageIdentity) => throw null;
         public Agility.Sdk.Model.SpaPackages.DeploymentServerIdentity AddDeploymentServer(string sessionId, Agility.Sdk.Model.SpaPackages.DeploymentServer deploymentServer) => throw null;
@@ -38,5 +39,6 @@ namespace TotalAgility.Sdk
         public void LockPackage(string sessionId, Agility.Sdk.Model.SpaPackages.SpaPackageIdentity packageIdentity) { }
         public void UnLockPackage(string sessionId, Agility.Sdk.Model.SpaPackages.SpaPackageIdentity packageIdentity, bool force) { }
         public Agility.Sdk.Model.SpaPackages.PackageDeploymentResult DeployPackage(string sessionId, Agility.Sdk.Model.SpaPackages.Deployment deployment) => throw null;
+        public void RollbackPackage(string sessionId, Agility.Sdk.Model.Package.RollbackLog rollbackLog) { }
     }
 }

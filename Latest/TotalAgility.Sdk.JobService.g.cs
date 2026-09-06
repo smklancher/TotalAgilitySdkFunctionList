@@ -23,6 +23,7 @@ namespace TotalAgility.Sdk
         public void HoldJob(string sessionId, Agility.Sdk.Model.Jobs.JobIdentity jobIdentity, Agility.Sdk.Model.Jobs.OnHoldOptions onHoldOptions) { }
         public void HoldJob2(string sessionId, Agility.Sdk.Model.Jobs.JobIdentity jobIdentity, Agility.Sdk.Model.Jobs.OnHoldOptions2 onHoldOptions) { }
         public Agility.Sdk.Model.Processes.ProcessViewerData GetJobViewerData(string sessionId, Agility.Sdk.Model.Jobs.JobIdentity jobIdentity, bool associatedJobs) => throw null;
+        public Agility.Sdk.Model.Processes.ProcessViewerData2 GetJobViewerData2(string sessionId, Agility.Sdk.Model.Jobs.JobIdentity jobIdentity, bool associatedJobs) => throw null;
         public void UpgradeJob(string sessionId, Agility.Sdk.Model.Jobs.JobIdentity jobIdentity) { }
         public void UpdateJobSpend(string sessionId, Agility.Sdk.Model.Jobs.JobIdentity jobIdentity, double value) { }
         public void UpdateJobNote(string sessionId, Agility.Sdk.Model.Jobs.JobIdentity jobIdentity, System.DateTime dateNoteEntered, Agility.Sdk.Model.Server.NoteInfo noteInfo) { }
@@ -84,10 +85,12 @@ namespace TotalAgility.Sdk
         public Agility.Sdk.Model.Jobs.JobIdentity CreateJobUsingProcessType(string sessionId, short processType, string caseReference, Agility.Sdk.Model.Processes.ProcessIdentity processIdentity, Agility.Sdk.Model.Jobs.JobInitialization2 jobInitialization) => throw null;
         public void ReevaluatePrecondition(string sessionId, Agility.Sdk.Model.Jobs.JobIdentity jobIdentity) { }
         public string GetSubJobViewerData(string sessionId, Agility.Sdk.Model.Jobs.SubJobIdentity subJobIdentity, Agility.Sdk.Model.Processes.ProcessIdentity processIdentity) => throw null;
+        public Agility.Sdk.Model.Processes.ProcessViewerData2 GetSubJobViewerData3(string sessionId, Agility.Sdk.Model.Jobs.SubJobIdentity subJobIdentity, Agility.Sdk.Model.Processes.ProcessIdentity processIdentity, bool getSubJobProperties) => throw null;
         public int EvaluateScore(string sessionId, Agility.Sdk.Model.Jobs.JobIdentity job) => throw null;
         public Agility.Sdk.Model.Jobs.SyncJob CreateJobSync(string sessionId, Agility.Sdk.Model.Processes.ProcessIdentity processIdentity, Agility.Sdk.Model.Jobs.JobInitialization jobInitialization, Agility.Sdk.Model.Variables.VariableIdentityCollection variablesToReturn) => throw null;
         public Agility.Sdk.Model.Jobs.JobRole GetJobRole(string sessionId, Agility.Sdk.Model.Jobs.JobIdentity jobIdentity, Agility.Sdk.Model.Roles.RoleIdentity roleIdentity) => throw null;
         public Agility.Sdk.Model.Jobs.JobRole2 GetJobRole2(string sessionId, Agility.Sdk.Model.Jobs.JobIdentity jobIdentity, Agility.Sdk.Model.Roles.RoleIdentity roleIdentity) => throw null;
+        public Agility.Sdk.Model.Jobs.JobRole3 GetJobRole3(string sessionId, Agility.Sdk.Model.Jobs.JobIdentity jobIdentity, Agility.Sdk.Model.Roles.RoleIdentity roleIdentity) => throw null;
         public string CreateCustomProcessForJob(string sessionId, string jobId, string categoryName, string newProcessName) => throw null;
         public string UpgradeJobs(string sessionId, Agility.Sdk.Model.Jobs.JobIdentityCollection jobsToUpgrade) => throw null;
         public string UpgradeJobs2(string sessionId, Agility.Sdk.Model.Jobs.UpgradeJobFilter upgradeJobFilter) => throw null;
@@ -122,5 +125,7 @@ namespace TotalAgility.Sdk
         public Agility.Sdk.Model.Variables.ComplexVariableActionOutput GetJobComplexVariableRows(string sessionId, Agility.Sdk.Model.Variables.UpdateComplexVariableAction updateComplexVariableAction) => throw null;
         public Agility.Sdk.Model.Variables.ComplexVariableValueRowCollection GetJobComplexVariableForTable(string sessionId, Agility.Sdk.Model.Jobs.JobIdentity jobIdentity, Agility.Sdk.Model.Variables.VariableIdentity variableIdentity) => throw null;
         public void UpdateJobComplexVariableFromTable(string sessionId, Agility.Sdk.Model.Jobs.JobIdentity jobIdentity, Agility.Sdk.Model.Variables.VariableIdentity variableIdentity, Agility.Sdk.Model.Variables.ComplexVariableValueRowCollection complexVariableRows) { }
+        public object UpdateDataObjectListVariable(string sessionId, Agility.Sdk.Model.Variables.UpdateDataListVariableAction updateDataListVariableAction) => throw null;
+        public Agility.Sdk.Model.Variables.DataListVariableActionOutput GetDataObjectListVariableRows(string sessionId, Agility.Sdk.Model.Variables.UpdateDataListVariableAction updateDataListVariableAction) => throw null;
     }
 }

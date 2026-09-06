@@ -6,10 +6,10 @@ namespace TotalAgility.Sdk
     public class DataAccessService
     {
         public DataAccessService(System.ServiceModel.Channels.Binding binding) { }
-        public Agility.Sdk.Model.DataAccess.DASObjectCollection GetDASObjectInfo(string sessionId, string connectionString, short dasObjectType) => throw null;
-        public Agility.Sdk.Model.DataAccess.DASParamCollection GetDASParameterInfo(string sessionId, string connectionString, string procedureName) => throw null;
-        public Agility.Sdk.Model.DataAccess.DASFieldCollection GetDASFieldInfo(string sessionId, string connectionString, string objectName, short dasObjectType) => throw null;
-        public string PreviewQueryResults(string sessionId, string connectionString, string queryStatement, bool multipleRows) => throw null;
+        public Agility.Sdk.Model.DataAccess.DASObjectCollection GetDASObjectInfo(string sessionId, string connectionString, string connectionSecret, short dasObjectType) => throw null;
+        public Agility.Sdk.Model.DataAccess.DASParamCollection GetDASParameterInfo(string sessionId, string connectionString, string connectionSecret, string procedureName) => throw null;
+        public Agility.Sdk.Model.DataAccess.DASFieldCollection GetDASFieldInfo(string sessionId, string connectionString, string connectionSecret, string objectName, short dasObjectType) => throw null;
+        public string PreviewQueryResults(string sessionId, string connectionString, string connectionSecret, string queryStatement, bool multipleRows) => throw null;
         public Agility.Sdk.Model.DataAccess.DASInformation InterrogateDasSql(string sessionId, string dasXml) => throw null;
         public int ExecuteNonQuery(string sessionId, string dasXml, Agility.Sdk.Model.DataAccess.DASParamValueCollection parametersValueCollection) => throw null;
         public Agility.Sdk.Model.DataAccess.StoredProcResults ExecuteStoredProcedure(string sessionId, string dasXml, Agility.Sdk.Model.DataAccess.DASParamValueCollection parametersValueCollection) => throw null;

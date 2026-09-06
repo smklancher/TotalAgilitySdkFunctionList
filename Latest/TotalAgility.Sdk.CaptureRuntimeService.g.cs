@@ -75,13 +75,13 @@ namespace TotalAgility.Sdk
         public object CaptureTableInterpolate(string sessionId, Agility.Sdk.Model.Capture.CommonInfo commonInfo, Agility.Sdk.Model.Capture.ReportingData reportingData, object fieldIdentity, int rowIndex, string id, object changeContainer) => throw null;
         public object CaptureTableInterpolate2(string sessionId, Agility.Sdk.Model.Capture.CommonInfo commonInfo, Agility.Sdk.Model.Capture.ReportingData reportingData, object fieldIdentity, int rowIndex, string id, object changeContainer) => throw null;
         public object CaptureTableInterpolate3(string sessionId, Agility.Sdk.Model.Capture.CommonInfo commonInfo, Agility.Sdk.Model.Capture.ReportingData reportingData, object fieldIdentity, int rowIndex, int endRow, string id, object changeContainer) => throw null;
-        public Agility.Sdk.Model.Capture.BatchInfo CreateDocumentUsingStream(string sessionId, string base64, string mimeType, Agility.Sdk.Model.Capture.BatchInfo batchInfo) => throw null;
+        public Agility.Sdk.Model.Capture.CaptureInfo CreateDocumentUsingStream(string sessionId, string base64, string mimeType, Agility.Sdk.Model.Capture.CaptureInfo captureInfo) => throw null;
         public Agility.Sdk.Model.Capture.Document GetDocument(string sessionId, string documentId, Agility.Sdk.Model.Capture.CommonInfo commonInfo) => throw null;
         public object MergeDocument(string sessionId, Agility.Sdk.Model.Capture.CommonInfo commonInfo, Agility.Sdk.Model.Capture.ReportingData reportingData, string fromDocumentId, string toDocumentId, object changeContainer) => throw null;
         public object MergeDocuments(string sessionId, Agility.Sdk.Model.Capture.CommonInfo commonInfo, Agility.Sdk.Model.Capture.ReportingData reportingData, object documentIds, object changeContainer) => throw null;
         public object MergeDocument2(string sessionId, Agility.Sdk.Model.Capture.CommonInfo commonInfo, Agility.Sdk.Model.Capture.ReportingData reportingData, string sourceDocumentId, string destinationDocId, string parentFolderId, object changeContainer) => throw null;
         public object MergeDocuments2(string sessionId, Agility.Sdk.Model.Capture.CommonInfo commonInfo, Agility.Sdk.Model.Capture.ReportingData reportingData, string sourceDocumentId, string parentFolderId, object documentIds, object changeContainer) => throw null;
-        public object DeletePage(string sessionId, Agility.Sdk.Model.Capture.BatchInfo batchInfo, string documentId, int pageIndex) => throw null;
-        public Agility.Sdk.Model.Capture.BatchInfo MovePage(string sessionId, Agility.Sdk.Model.Capture.BatchInfo batchInfo, string sourceDocumentId, string destinationDocId, int pageIndex, int insertIndex) => throw null;
+        public void DeletePage(string sessionId, Agility.Sdk.Model.Capture.CaptureInfo captureInfo, string documentId, int pageIndex) { }
+        public Agility.Sdk.Model.Capture.CaptureInfo MovePage(string sessionId, Agility.Sdk.Model.Capture.CaptureInfo captureInfo, string sourceDocumentId, string destinationDocId, int pageIndex, int insertIndex) => throw null;
     }
 }
