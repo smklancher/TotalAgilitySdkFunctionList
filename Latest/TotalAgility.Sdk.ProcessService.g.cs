@@ -26,6 +26,7 @@ namespace TotalAgility.Sdk
         public Agility.Sdk.Model.Variables.SkinVariableCollection GetSkinVariables(string sessionId, Agility.Sdk.Model.Skins.SkinIdentity skinIdentity) => throw null;
         public Agility.Sdk.Model.Processes.ProcessSummary GetProcessSummary(string sessionId, Agility.Sdk.Model.Processes.ProcessIdentity processIdentity) => throw null;
         public Agility.Sdk.Model.Processes.ProcessSummary4 GetProcessSummary2(string sessionId, Agility.Sdk.Model.Processes.ProcessIdentity processIdentity) => throw null;
+        public Agility.Sdk.Model.Processes.ProcessSummary GetProcessSummaryForSkillLevel(string sessionId, Agility.Sdk.Model.Processes.ProcessIdentity processIdentity) => throw null;
         public Agility.Sdk.Model.Processes.ProcessTemplate GetProcessTemplate(string sessionId, Agility.Sdk.Model.Processes.ProcessIdentity processIdentity) => throw null;
         public Agility.Sdk.Model.Variables.VariableCollection GetProcessVariables(string sessionId, Agility.Sdk.Model.Processes.ProcessIdentity processIdentity) => throw null;
         public Agility.Sdk.Model.Skins.SkinIdentity AddSkin(string sessionId, Agility.Sdk.Model.Skins.Skin skin) => throw null;

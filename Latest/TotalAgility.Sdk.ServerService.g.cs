@@ -177,6 +177,8 @@ namespace TotalAgility.Sdk
         public Agility.Sdk.Model.Capture.Import.ImportConnectionIdentityCollection GetImportConnections(string sessionId) => throw null;
         public Agility.Sdk.Model.Capture.Import.ImportConnectionCollection GetImportConnections2(string sessionId) => throw null;
         public void UpdateImportConnection(string sessionId, Agility.Sdk.Model.Capture.Import.ImportConnection importConnection, bool overwrite) { }
+        public void ActivateImportSource(string sessionId, Agility.Sdk.Model.Capture.Import.ImportConnectionIdentity importConnectionIdentity, Agility.Sdk.Model.Capture.Import.ImportSourceIdentity importSourceIdentity) { }
+        public void DeactivateImportSource(string sessionId, Agility.Sdk.Model.Capture.Import.ImportConnectionIdentity importConnectionIdentity, Agility.Sdk.Model.Capture.Import.ImportSourceIdentity importSourceIdentity) { }
         public void ActivateProductLicense(string sessionId, string activationCode, string serverName) { }
         public void ActivateProductLicense2(string activationCode, string serverName) { }
         public string GetProductLicenseActivationCode(string sessionId, string serialNumber, string productCode, string machineId) => throw null;

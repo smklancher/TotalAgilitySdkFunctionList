@@ -6,7 +6,7 @@ namespace TotalAgility.Sdk
     public class OAuthServerService
     {
         public OAuthServerService(System.ServiceModel.Channels.Binding binding) { }
-        public Agility.Sdk.Model.OAuthServer.OAuthServerIdentityCollection GetOAuthServers(string sessionId, Agility.Sdk.Model.Search.SearchTextFilter filter) => throw null;
+        public Agility.Sdk.Model.OAuthServer.OAuthServerSummaryCollection GetOAuthServers(string sessionId, Agility.Sdk.Model.Search.SearchTextFilter filter) => throw null;
         public void DeleteOAuthServer(string sessionId, Agility.Sdk.Model.OAuthServer.OAuthServerIdentity oAuthServerIdentity) { }
         public void AddOAuthServer(string sessionId, Agility.Sdk.Model.OAuthServer.OAuthServer oAuthServer) { }
         public void UpdateOAuthServer(string sessionId, Agility.Sdk.Model.OAuthServer.OAuthServer oAuthServer) { }

@@ -14,5 +14,6 @@ namespace TotalAgility.Sdk
         public Agility.Sdk.Model.License.SharedLicenseDetails RequestSharedFeatureLicenses(string sessionId, string host, string debugName, int licenseId, long unitsRequested, int challenge, long licenseServerKey) => throw null;
         public Agility.Sdk.Model.License.VolumeLicenseRolloverDetails UseVolumeLicenseWithRollover(string sessionId, string host, string debugName, int licenseId, long units, int challenge, long licenseServerKey, long transactionId, string cachedVolumeData) => throw null;
         public Agility.Sdk.Model.License.LicenseServerInfo GetServerInfo(string sessionId, bool checkServerAvailability) => throw null;
+        public Agility.Sdk.Model.License.LicenseServerInfo GetServerInfo2(string sessionId, bool checkServerAvailability, bool getExpiredLicenses = false) => throw null;
     }
 }

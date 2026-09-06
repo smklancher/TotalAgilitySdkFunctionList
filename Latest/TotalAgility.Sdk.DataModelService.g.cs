@@ -12,5 +12,6 @@ namespace TotalAgility.Sdk
         public void LockDataModel(string sessionId, Agility.Sdk.Model.Server.DataModelIdentity dataModelIdentity) { }
         public void UnlockDataModel(string sessionId, Agility.Sdk.Model.Server.DataModelIdentity dataModelIdentity, bool force) { }
         public Agility.Sdk.Model.NameValuePairCollection UpdateDataObjectFormVariables(string sessionId, Agility.Sdk.Model.Forms.DataObjectFormVarsUpdate dataObjectFormVarsUpdate) => throw null;
+        public Agility.Sdk.Model.NameValuePairCollection UpdateDataObjectFormVariables2(Agility.Sdk.Model.Forms.DataObjectFormVarsUpdate dataObjectFormVarsUpdate) => throw null;
     }
 }

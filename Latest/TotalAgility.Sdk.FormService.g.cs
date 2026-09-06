@@ -78,5 +78,6 @@ namespace TotalAgility.Sdk
         public Agility.Sdk.Model.Forms.FormTemplateIdentity SaveFormTemplate(string sessionId, Agility.Sdk.Model.Forms.FormTemplate formTemplate) => throw null;
         public Agility.Sdk.Model.Forms.BuildForms.BuildFormResultCollection BuildActivityForms(string sessionId, Agility.Sdk.Model.Forms.BuildForms.BuildFormInfoCollection buildFormInfoCollection) => throw null;
         public Agility.Sdk.Model.NameValuePairCollection GetDataObjectFormVariableDefaultValues(string sessionId, Agility.Sdk.Model.NameValuePairCollection dataObjectVariables) => throw null;
+        public void ValidateCustomFormAccess(string sessionId) { }
     }
 }

@@ -11,19 +11,30 @@ namespace TotalAgility.Sdk
         public void DeleteAIProvider(string sessionId, Agility.Sdk.Model.Integration.GenerativeAI.AIProviderIdentity providerIdentity) { }
         public Agility.Sdk.Model.Integration.GenerativeAI.AIProvider GetAIProvider(string sessionId, Agility.Sdk.Model.Integration.GenerativeAI.AIProviderIdentity providerIdentity) => throw null;
         public Agility.Sdk.Model.Integration.GenerativeAI.AIProvider GetAIProviderForCoPilot(string sessionId) => throw null;
+        public Agility.Sdk.Model.Integration.GenerativeAI.AIProvider GetAIProviderForExtraction(string sessionId) => throw null;
         public Agility.Sdk.Model.Integration.GenerativeAI.AIProviderSummaryCollection GetAIProviders(string sessionId, Agility.Sdk.Model.Integration.GenerativeAI.AIProviderFilter filter) => throw null;
         public Agility.Sdk.Model.Server.WorkerTaskIdentity GenerateItemAsync(string sessionId, Agility.Sdk.Model.Server.StringCollection inputPrompts, short aiGroupingType) => throw null;
         public Agility.Sdk.Model.Server.WorkerTaskIdentity RegenerateItemAsync(string sessionId, string existingItemJson, Agility.Sdk.Model.Server.StringCollection inputPrompts, short aiGroupingType) => throw null;
         public Agility.Sdk.Model.QuickApps.QuickAppSummary SaveAsQuickWorkflow(string sessionId, Agility.Sdk.Model.Processes.Process process) => throw null;
         public Agility.Sdk.Model.Forms.SavedForm SaveForm(string sessionId, Agility.Sdk.Model.Forms.Form form) => throw null;
-        public Agility.Sdk.Model.Processes.SavedProcess SaveProcess(string sessionId, Agility.Sdk.Model.Processes.Process process, bool release) => throw null;
+        public Agility.Sdk.Model.Processes.SavedProcess SaveProcess(string sessionId, Agility.Sdk.Model.Processes.Process process, Agility.Sdk.Model.Integration.GenerativeAI.AIProcessSaveOptions aiProcessSaveOptions) => throw null;
         public Agility.Sdk.Model.Integration.GenerativeAI.GeneratedProcess GetGeneratedProcess(string sessionId, Agility.Sdk.Model.Server.WorkerTaskIdentity workerTaskIdentity) => throw null;
         public Agility.Sdk.Model.Integration.GenerativeAI.GeneratedForm GetGeneratedForm(string sessionId, Agility.Sdk.Model.Server.WorkerTaskIdentity workerTaskIdentity) => throw null;
         public Agility.Sdk.Model.Integration.GenerativeAI.GenerativeAIOutput ExecuteGenerativeAIPrompt(string sessionId, Agility.Sdk.Model.Integration.GenerativeAI.GenerativeAIPromptInputs inputs) => throw null;
         public Agility.Sdk.Model.Integration.GenerativeAI.GenerativeAIOutput ExecuteGenerativeAIChatPrompt(string sessionId, Agility.Sdk.Model.Integration.GenerativeAI.GenerativeAIChatPromptInputs inputs) => throw null;
         public Agility.Sdk.Model.Integration.GenerativeAI.GeneratedDataModel GetGeneratedDataModel(string sessionId, Agility.Sdk.Model.Server.WorkerTaskIdentity workerTaskIdentity) => throw null;
+        public Agility.Sdk.Model.Integration.GenerativeAI.GeneratedLookup GetGeneratedLookup(string sessionId, Agility.Sdk.Model.Server.WorkerTaskIdentity workerTaskIdentity) => throw null;
         public Agility.Sdk.Model.Server.DataModelIdentity SaveDataModel(string sessionId, Agility.Sdk.Model.Server.DataModel dataModel, bool release) => throw null;
         public Agility.Sdk.Model.Server.TranslatedStrings GetTranslatedStrings(string sessionId, Agility.Sdk.Model.Server.WorkerTaskIdentity workerTaskIdentity) => throw null;
         public Agility.Sdk.Model.Server.WorkerTaskIdentity CheckProviderCompatibility(string sessionId, Agility.Sdk.Model.Integration.GenerativeAI.AIProvider provider) => throw null;
+        public void SaveLookup(string sessionId, Agility.Sdk.Model.Lookups.Lookup lookup) { }
+        public void SaveAIRagIntegration(string sessionId, Agility.Sdk.Model.Integration.RagAI.AIRagIntegrationSettings aiRagIntegrationSettings) { }
+        public Agility.Sdk.Model.Integration.RagAI.AIRagIntegrationSettings GetAIRagIntegration(string sessionId, Agility.Sdk.Model.Integration.IntegrationSiteIdentity integrationSiteIdentity) => throw null;
+        public void UpdateAIRagIntegration(string sessionId, Agility.Sdk.Model.Integration.RagAI.AIRagIntegrationSettings aiRagIntegrationSettings) { }
+        public void DeleteAIRagIntegration(string sessionId, Agility.Sdk.Model.Integration.IntegrationSite integrationSite, bool deleteIndexes) { }
+        public Agility.Sdk.Model.Integration.RagAI.RagSearchResult ExecuteRagSearch(string sessionId, Agility.Sdk.Model.Integration.RagAI.RagSearchSettings settings, string queryText) => throw null;
+        public void ExecuteDeleteDocsRagActivity(string sessionId, Agility.Sdk.Model.Integration.RagAI.DeleteDocsRagActivitySettings settings) { }
+        public Agility.Sdk.Model.Integration.GenerativeAI.GeneratedDecisionTable GetGeneratedDecisionTable(string sessionId, Agility.Sdk.Model.Server.WorkerTaskIdentity workerTaskIdentity) => throw null;
+        public void ExecuteAddUpdateDocsRagActivity(string sessionId, Agility.Sdk.Model.Integration.RagAI.AddUpdateDocsRagActivitySettings settings) { }
     }
 }

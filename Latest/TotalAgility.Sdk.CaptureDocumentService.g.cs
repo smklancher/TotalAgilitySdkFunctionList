@@ -30,7 +30,9 @@ namespace TotalAgility.Sdk
         public Agility.Sdk.Model.Capture.DocumentImage GetImage(string sessionId, Agility.Sdk.Model.Capture.ReportingData reportingData, string imageId, int desiredWidth, int desiredHeight, string desiredFormat) => throw null;
         public System.IO.Stream GetPageImage(string sessionId, string docId, string pageId, int desiredWidth, int desiredHeight, string desiredFormat) => throw null;
         public Agility.Sdk.Model.Capture.DeletionResult DeleteDocument(string sessionId, string documentId, Agility.Sdk.Model.Capture.ReportingData reportingData, bool failOnError) => throw null;
+        public Agility.Sdk.Model.Capture.DeletionResult DeleteDocument2(string sessionId, string documentId, Agility.Sdk.Model.Capture.ReportingData reportingData, bool failOnError, bool allowDeleteOnlineLearningDocument) => throw null;
         public Agility.Sdk.Model.Capture.DeletionResult DeleteDocuments(string sessionId, Agility.Sdk.Model.Server.StringCollection documentIds, Agility.Sdk.Model.Capture.ReportingData reportingData, bool ignoreError) => throw null;
+        public Agility.Sdk.Model.Capture.DeletionResult DeleteDocuments2(string sessionId, Agility.Sdk.Model.Server.StringCollection documentIds, Agility.Sdk.Model.Capture.ReportingData reportingData, bool ignoreError, bool allowDeleteOnlineLearningDocument) => throw null;
         public string SplitDocument(string sessionId, Agility.Sdk.Model.Capture.ReportingData reportingData, string documentId, int pageIndex) => throw null;
         public void SetDocumentFieldsStatus(string sessionId, Agility.Sdk.Model.Capture.ReportingData reportingData, string documentId, Agility.Sdk.Model.Capture.FieldStatusCollection fieldsStatus) { }
         public void SetDocumentFieldStatus(string sessionId, Agility.Sdk.Model.Capture.ReportingData reportingData, string documentId, Agility.Sdk.Model.Capture.RuntimeFieldIdentity fieldIdentity, short documentFieldStatus, string message, object fieldValue) { }
@@ -45,6 +47,7 @@ namespace TotalAgility.Sdk
         public void UnrejectPages(string sessionId, string documentId, Agility.Sdk.Model.Capture.PageIndexCollection pageIndexes) { }
         public Agility.Sdk.Model.Capture.RejectedPages GetRejectedPages(string sessionId, string documentId) => throw null;
         public Agility.Sdk.Model.Capture.DeletionResult DeleteFolder(string sessionId, string folderId, Agility.Sdk.Model.Capture.ReportingData reportingData, bool failOnError) => throw null;
+        public Agility.Sdk.Model.Capture.DeletionResult DeleteFolder2(string sessionId, string folderId, Agility.Sdk.Model.Capture.ReportingData reportingData, bool failOnError, bool allowDeletingOnlineLearningFolders) => throw null;
         public string SplitFolder(string sessionId, Agility.Sdk.Model.Capture.ReportingData reportingData, string folderId, int index) => throw null;
         public string SplitFolder2(string sessionId, Agility.Sdk.Model.Capture.ReportingData reportingData, string folderId, int index) => throw null;
         public void MoveFolder(string sessionId, Agility.Sdk.Model.Capture.ReportingData reportingData, string folderId, string toFolderId, int insertIndex) { }
@@ -89,6 +92,7 @@ namespace TotalAgility.Sdk
         public void CreatePageUsingStream(string sessionId, Agility.Sdk.Model.Capture.ReportingData reportingData, string documentId, Agility.Sdk.Model.Capture.RuntimeFieldCollection runtimeFields, byte[] data, int insertIndex, string mimeType) { }
         public System.Data.DataSet GetDocumentTableFieldValue(string sessionId, Agility.Sdk.Model.Capture.ReportingData reportingData, string documentId, Agility.Sdk.Model.Capture.TableFieldIdentity tableFieldIdentity) => throw null;
         public Agility.Sdk.Model.Capture.LockedItemCollection GetJobVariableLockStatus(string sessionId, Agility.Sdk.Model.Capture.ReportingData reportingData, Agility.Sdk.Model.Jobs.JobIdentity jobIdentity) => throw null;
+        public Agility.Sdk.Model.Capture.LockedItemCollection GetJobVariableLockStatusWithHierarchy(string sessionId, Agility.Sdk.Model.Capture.ReportingData reportingData, Agility.Sdk.Model.Jobs.JobIdentity jobIdentity) => throw null;
         public void ForceUnlockItem(string sessionId, Agility.Sdk.Model.Capture.ReportingData reportingData, Agility.Sdk.Model.Capture.LockedItemIdentity identity) { }
         public Agility.Sdk.Model.Nlp.NamedEntityCollection GetNamedEntities(string sessionId, string documentId) => throw null;
         public System.IO.Stream GetDocumentFile(string sessionId, Agility.Sdk.Model.Capture.ReportingData reportingData, string documentId, string fileType) => throw null;
@@ -96,9 +100,11 @@ namespace TotalAgility.Sdk
         public System.IO.Stream GetDocumentRenditionsFile(string sessionId, string documentId, string renditionName, string fileType) => throw null;
         public void UpdateDocumentType(string sessionId, string documentId, Agility.Sdk.Model.Capture.DocumentTypeIdentity documentTypeIdentity) { }
         public void UpdateDocumentType2(string sessionId, Agility.Sdk.Model.Capture.ReportingData reportingData, string documentId, Agility.Sdk.Model.Capture.DocumentTypeIdentity documentTypeIdentity) { }
+        public void UpdateDocumentType3(string sessionId, Agility.Sdk.Model.Capture.ReportingData reportingData, string documentId, Agility.Sdk.Model.Capture.DocumentTypeIdentity documentTypeIdentity, Agility.Sdk.Model.Capture.ClassificationGroupIdentity classificationGroupIdentity) { }
         public void UpdateDocumentTypeWithConfidence(string sessionId, string documentId, Agility.Sdk.Model.Capture.DocumentTypeIdentity documentTypeIdentity, double confidenceLevel) { }
         public void UpdateDocumentTypeWithConfidence2(string sessionId, string documentId, Agility.Sdk.Model.Capture.DocumentTypeIdentity documentTypeIdentity, double confidenceLevel, bool classificationConfident) { }
         public void UpdateDocumentTypeWithConfidence3(string sessionId, Agility.Sdk.Model.Capture.ReportingData reportingData, string documentId, Agility.Sdk.Model.Capture.DocumentTypeIdentity documentTypeIdentity, double confidenceLevel, bool classificationConfident) { }
+        public void UpdateDocumentTypeWithConfidence4(string sessionId, Agility.Sdk.Model.Capture.ReportingData reportingData, string documentId, Agility.Sdk.Model.Capture.DocumentTypeIdentity documentTypeIdentity, Agility.Sdk.Model.Capture.ClassificationGroupIdentity classificationGroupIdentity, double confidenceLevel, bool classificationConfident) { }
         public Agility.Sdk.Model.Capture.DocumentIdentityCollection SplitDocumentAndClassify(string sessionId, Agility.Sdk.Model.Capture.ReportingData reportingData, string documentId, Agility.Sdk.Model.Capture.SplitDocumentInfoCollection splitDocumentInfoCollection) => throw null;
         public void CopyDocumentFieldValues(string sessionId, string sourceDocumentId, string targetDocumentId) { }
         public void MergeDocuments(string sessionId, Agility.Sdk.Model.Server.StringCollection documentIds) { }
