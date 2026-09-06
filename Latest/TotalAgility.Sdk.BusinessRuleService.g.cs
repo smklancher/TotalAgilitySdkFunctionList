@@ -15,6 +15,7 @@ namespace TotalAgility.Sdk
         public Agility.Sdk.Model.BusinessRules.BusinessRuleAssociations GetBusinessRuleAssociations(string sessionId, Agility.Sdk.Model.BusinessRules.BusinessRuleIdentity businessRuleIdentity) => throw null;
         public Agility.Sdk.Model.BusinessRules.BusinessRuleOutputCollection EvaluateBusinessRule(string sessionId, Agility.Sdk.Model.BusinessRules.BusinessRuleIdentity businessRuleIdentity, Agility.Sdk.Model.BusinessRules.BusinessRuleInputCollection ruleInputs, bool verifyReleasedStatus) => throw null;
         public Agility.Sdk.Model.BusinessRules.BusinessRuleOutputCollection EvaluateBusinessRule2(Agility.Sdk.Model.BusinessRules.BusinessRuleIdentity businessRuleIdentity, Agility.Sdk.Model.BusinessRules.BusinessRuleInputCollection ruleInputs, bool verifyReleasedStatus) => throw null;
+        public Agility.Sdk.Model.BusinessRules.BusinessRuleOutputCollection EvaluateBusinessRule3(Agility.Sdk.Model.BusinessRules.EvaluateBusinessRuleData evaluateBusinessRuleData) => throw null;
         public Agility.Sdk.Model.BusinessRules.BusinessRuleOutputCollection ExecuteBusinessRule(string sessionId, Agility.Sdk.Model.BusinessRules.BusinessRuleRuntimeIdentity businessRuleRuntimeIdentity, Agility.Sdk.Model.BusinessRules.BusinessRuleInputCollection ruleInputs) => throw null;
         public Agility.Sdk.Model.BusinessRules.BusinessRuleIdentityCollection GetBusinessRuleVersions(string sessionId, Agility.Sdk.Model.BusinessRules.BusinessRuleIdentity businessRuleIdentity) => throw null;
         public Agility.Sdk.Model.BusinessRules.BusinessRule GetBusinessRule(string sessionId, Agility.Sdk.Model.BusinessRules.BusinessRuleIdentity businessRuleIdentity) => throw null;
@@ -24,5 +25,7 @@ namespace TotalAgility.Sdk
         public string DeleteLogging(string sessionId, Agility.Sdk.Model.BusinessRules.RuleLoggingConfigCollection loggingCollection) => throw null;
         public Agility.Sdk.Model.Variables.BusinessDataVariableCollection GetBusinessData(string sessionId, Agility.Sdk.Model.BusinessRules.BusinessRuleIdentity ruleIdentity) => throw null;
         public void SaveBusinessData(string sessionId, Agility.Sdk.Model.BusinessRules.BusinessRuleIdentity ruleIdentity, Agility.Sdk.Model.Variables.BusinessDataVariableCollection updatedVariables) { }
+        public Agility.Sdk.Model.Server.JsonPayload GenerateSdkJsonPayload(string sessionId, string methodName, Agility.Sdk.Model.BusinessRules.BusinessRuleIdentity ruleIdentity) => throw null;
+        public Agility.Sdk.Model.Server.JsonPayload GenerateRestJsonPayload(string sessionId, string serviceUrl, Agility.Sdk.Model.BusinessRules.BusinessRuleIdentity ruleIdentity) => throw null;
     }
 }

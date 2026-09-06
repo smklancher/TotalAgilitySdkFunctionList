@@ -75,5 +75,6 @@ namespace TotalAgility.Sdk
         public void UpdateFieldValidator(string sessionId, Agility.Sdk.Model.Capture.Validation.GlobalFieldValidator fieldValidator, bool overwrite) { }
         public void DeleteFieldValidator(string sessionId, Agility.Sdk.Model.Capture.Validation.ValidatorIdentity validatorIdentity) { }
         public Agility.Sdk.Model.Capture.Validation.ValidatorSummaryCollection GetFieldValidators(string sessionId, Agility.Sdk.Model.Categories.CategoryIdentity categoryIdentity, Agility.Sdk.Model.Capture.Validation.ValidatorIdentityCollection specificValidators) => throw null;
+        public Agility.Sdk.Model.Capture.DocumentTypeIdentityCollection GetDocumentTypeIdentities(string sessionId, Agility.Sdk.Model.Capture.DocumentGroupIdentityCollection documentGroupIdentityCollection) => throw null;
     }
 }

@@ -8,12 +8,13 @@ namespace TotalAgility.Sdk
         public CaptureSolutionService(System.ServiceModel.Channels.Binding binding) { }
         public Agility.Sdk.Model.CaptureSolutions.CaptureSolutionSummaryCollection GetCaptureSolutions(string sessionId, Agility.Sdk.Model.CaptureSolutions.CaptureSolutionFilter captureSolutionFilter) => throw null;
         public Agility.Sdk.Model.CaptureSolutions.CaptureSolution GetCaptureSolution(string sessionId, Agility.Sdk.Model.CaptureSolutions.CaptureSolutionIdentity identity) => throw null;
-        public Agility.Sdk.Model.CaptureSolutions.CaptureSolutionIdentity SaveCaptureSolution(string sessionId, Agility.Sdk.Model.CaptureSolutions.CaptureSolution captureSolution) => throw null;
+        public Agility.Sdk.Model.CaptureSolutions.CaptureSolutionSummary SaveCaptureSolution(string sessionId, Agility.Sdk.Model.CaptureSolutions.CaptureSolution captureSolution) => throw null;
         public Agility.Sdk.Model.Assets.AssetIdentity CreateExportZip(string sessionId, string folderId) => throw null;
         public Agility.Sdk.Model.CaptureSolutions.CaptureSolutionSummary PublishCaptureSolution(string sessionId, Agility.Sdk.Model.CaptureSolutions.CaptureSolutionIdentity captureSolutionIdentity, Agility.Sdk.Model.CaptureSolutions.CaptureSolution captureSolution) => throw null;
         public void DeleteCaptureSolution(string sessionId, Agility.Sdk.Model.CaptureSolutions.CaptureSolutionIdentity captureSolutionIdentity, bool deleteAllVersions) { }
         public void LockCaptureSolution(string sessionId, Agility.Sdk.Model.CaptureSolutions.CaptureSolutionIdentity identity) { }
         public void UnlockCaptureSolution(string sessionId, Agility.Sdk.Model.CaptureSolutions.CaptureSolutionIdentity identity) { }
+        public void ForceUnlockCaptureSolution(string sessionId, Agility.Sdk.Model.CaptureSolutions.CaptureSolutionIdentity identity) { }
         public Agility.Sdk.Model.Server.StringCollection GetBarcodeTypes(string sessionId) => throw null;
         public Agility.Sdk.Model.Server.StringCollection GetRecognitionLanguages(string sessionId) => throw null;
         public Agility.Sdk.Model.CaptureSolutions.Classification.ClassificationTrainingResultCollection AnalyzeClassificationTraining(string sessionId, Agility.Sdk.Model.CaptureSolutions.CaptureSolution captureSolution) => throw null;

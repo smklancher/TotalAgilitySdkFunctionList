@@ -40,6 +40,7 @@ namespace TotalAgility.Sdk
         public Agility.Sdk.Model.Activities.JobActivityInfoCollection GetTakenActivitiesForResource(string sessionId, Agility.Sdk.Model.Resources.ResourceIdentity resourceIdentity) => throw null;
         public void CreateAdhocActivity(string sessionId, Agility.Sdk.Model.Activities.AdhocActivity adhocActivity) { }
         public void PerformAutoWorkAllocation(string sessionId, Agility.Sdk.Model.WorkAllocation.AutoWorkAllocationOptions filter) { }
+        public void PerformAutoWorkAllocation2(string sessionId, Agility.Sdk.Model.WorkAllocation.AutoWorkAllocationOptions2 filter) { }
         public void AddActivityResources(string sessionId, Agility.Sdk.Model.Activities.JobActivityIdentity jobActivityIdentity, Agility.Sdk.Model.Resources.ResourceIdentityCollection resourceIdentityCollection) { }
         public void DeleteActivityResources(string sessionId, Agility.Sdk.Model.Activities.JobActivityIdentity jobActivityIdentity, Agility.Sdk.Model.Resources.ResourceIdentityCollection resourceIdentityCollection) { }
         public Agility.Sdk.Model.Resources.ResourceIdentityCollection GetActivityUsableResources(string sessionId, Agility.Sdk.Model.Activities.JobActivityIdentity jobActivityIdentity) => throw null;
@@ -69,5 +70,8 @@ namespace TotalAgility.Sdk
         public int GetWorkQueueCountWithQuery(string sessionId, Agility.Sdk.Model.Queries.QueryIdentity queryIdentity, Agility.Sdk.Model.Activities.JobActivityQueryFilter jobActivityFilter) => throw null;
         public Agility.Sdk.Model.Activities.JobActivityInfo4 GetJobActivityInfo4(string sessionId, Agility.Sdk.Model.Activities.JobActivityIdentity2 jobActivityIdentity) => throw null;
         public Agility.Sdk.Model.Activities.ActivitiesSummaryResults GetActivitiesSummaryWithQuery(string sessionId, Agility.Sdk.Model.Queries.QueryIdentity queryIdentity, Agility.Sdk.Model.Activities.ActivityField groupByField) => throw null;
+        public Agility.Sdk.Model.Server.JsonPayload GenerateSdkJsonPayload(string sessionId, string methodName, Agility.Sdk.Model.Processes.ProcessIdentity processIdentity, short nodeId, Agility.Sdk.Model.CaseProcesses.CaseIdentity caseIdentity) => throw null;
+        public Agility.Sdk.Model.Server.JsonPayload GenerateRestSdkJsonPayload(string sessionId, string serviceUrl, Agility.Sdk.Model.Processes.ProcessIdentity processIdentity, short nodeId, Agility.Sdk.Model.CaseProcesses.CaseIdentity caseIdentity) => throw null;
+        public Agility.Sdk.Model.Activities.ActivitiesSummaryResults GetActivitiesSummaryWithQueryAndMergedFilter(string sessionId, Agility.Sdk.Model.Queries.QueryIdentity queryIdentity, Agility.Sdk.Model.Activities.ActivityField groupByField, Agility.Sdk.Model.Activities.JobActivityFilterOverride activityFilterOverride) => throw null;
     }
 }

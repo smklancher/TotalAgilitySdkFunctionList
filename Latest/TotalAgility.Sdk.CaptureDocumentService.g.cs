@@ -46,6 +46,7 @@ namespace TotalAgility.Sdk
         public Agility.Sdk.Model.Capture.RejectedPages GetRejectedPages(string sessionId, string documentId) => throw null;
         public Agility.Sdk.Model.Capture.DeletionResult DeleteFolder(string sessionId, string folderId, Agility.Sdk.Model.Capture.ReportingData reportingData, bool failOnError) => throw null;
         public string SplitFolder(string sessionId, Agility.Sdk.Model.Capture.ReportingData reportingData, string folderId, int index) => throw null;
+        public string SplitFolder2(string sessionId, Agility.Sdk.Model.Capture.ReportingData reportingData, string folderId, int index) => throw null;
         public void MoveFolder(string sessionId, Agility.Sdk.Model.Capture.ReportingData reportingData, string folderId, string toFolderId, int insertIndex) { }
         public void UpdateFolderFieldValue(string sessionId, Agility.Sdk.Model.Capture.ReportingData reportingData, string folderId, Agility.Sdk.Model.Capture.RuntimeField runtimeField) { }
         public void UpdateFolderFieldValues(string sessionId, Agility.Sdk.Model.Capture.ReportingData reportingData, string folderId, Agility.Sdk.Model.Capture.RuntimeFieldCollection runtimeFields) { }
@@ -71,6 +72,7 @@ namespace TotalAgility.Sdk
         public Agility.Sdk.Model.Capture.Formatting.FormattingResult TestFieldFormatter(string sessionId, string value, Agility.Sdk.Model.Capture.Formatting.FieldFormatter fieldFormatter) => throw null;
         public Agility.Sdk.Model.Capture.Formatting.FormattingResult TestFieldFormatter2(string sessionId, string value, Agility.Sdk.Model.Capture.Formatting.FieldFormatter fieldFormatter, Agility.Sdk.Model.BusinessRules.BusinessRuleInputCollection ruleInputs) => throw null;
         public Agility.Sdk.Model.Capture.Validation.ValidationResult TestFieldValidator(string sessionId, string value, Agility.Sdk.Model.Capture.Validation.Validator validator) => throw null;
+        public Agility.Sdk.Model.Capture.Validation.ValidationResult TestFieldValidator2(string sessionId, string value, Agility.Sdk.Model.Capture.Validation.ValidatorIdentity validatorIdentity) => throw null;
         public Agility.Sdk.Model.Capture.Formatting.FormattingResult FormatField(string sessionId, string value, Agility.Sdk.Model.Capture.Formatting.FormatterIdentity formatterIdentity) => throw null;
         public Agility.Sdk.Model.Capture.Formatting.FormattingResult FormatField2(string sessionId, string value, Agility.Sdk.Model.Capture.Formatting.FormatterIdentity formatterIdentity, Agility.Sdk.Model.BusinessRules.BusinessRuleInputCollection ruleInputs) => throw null;
         public string GetDocumentAsFile(string sessionId, string documentId, string fileLocation, string fileName) => throw null;
@@ -162,5 +164,6 @@ namespace TotalAgility.Sdk
         public void DeleteBinaryChunks(string sessionId, Agility.Sdk.Model.Capture.ReportingData reportingData, string chunkGroupId) { }
         public int GetBinaryChunksCount(string sessionId, Agility.Sdk.Model.Capture.ReportingData reportingData, string chunkGroupId) => throw null;
         public void UpdateGeneratedPdf(string sessionId, Agility.Sdk.Model.Capture.ReportingData reportingData, string documentId, byte[] data, string binaryDataId) { }
+        public void AddPdfBookmarks(string sessionId, string documentId, Agility.Sdk.Model.Capture.Pdf.PdfBookmarkCollection bookmarks, short target, Agility.Sdk.Model.Capture.Pdf.PdfBookmarksOptions options) { }
     }
 }

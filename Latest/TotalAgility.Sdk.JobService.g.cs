@@ -127,5 +127,6 @@ namespace TotalAgility.Sdk
         public void UpdateJobComplexVariableFromTable(string sessionId, Agility.Sdk.Model.Jobs.JobIdentity jobIdentity, Agility.Sdk.Model.Variables.VariableIdentity variableIdentity, Agility.Sdk.Model.Variables.ComplexVariableValueRowCollection complexVariableRows) { }
         public object UpdateDataObjectListVariable(string sessionId, Agility.Sdk.Model.Variables.UpdateDataListVariableAction updateDataListVariableAction) => throw null;
         public Agility.Sdk.Model.Variables.DataListVariableActionOutput GetDataObjectListVariableRows(string sessionId, Agility.Sdk.Model.Variables.UpdateDataListVariableAction updateDataListVariableAction) => throw null;
+        public Agility.Sdk.Model.Jobs.JobsSummaryResults GetJobsSummaryWithQueryAndMergedFilter(string sessionId, Agility.Sdk.Model.Queries.QueryIdentity queryIdentity, Agility.Sdk.Model.Jobs.JobField groupByField, Agility.Sdk.Model.Jobs.JobFilterOverride jobFilterOverride) => throw null;
     }
 }

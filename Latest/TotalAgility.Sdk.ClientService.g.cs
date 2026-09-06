@@ -21,6 +21,8 @@ namespace TotalAgility.Sdk
         public Agility.Sdk.Model.Capture.FolderTypeSummary2Collection GetFolderTypes(string sessionId, Agility.Sdk.Model.Capture.FolderTypeIdentityCollection folderTypes) => throw null;
         public Agility.Sdk.Model.Processes.ProcessWithData GetProcess(string sessionId, Agility.Sdk.Model.Processes.ProcessIdentity processIdentity) => throw null;
         public Agility.Sdk.Model.Processes.ProcessWithData GetProcess2(string sessionId, Agility.Sdk.Model.Processes.ProcessIdentity processIdentity, bool updateRecentItems) => throw null;
+        public Agility.Sdk.Model.Variables.VariableSummaryCollection GetServerVariablesWithoutValues(string sessionId, Agility.Sdk.Model.Server.ServerVariablesFilter serverVariablesFilter) => throw null;
+        public Agility.Sdk.Model.Variables.Variable GetServerVariableValue(string sessionId, string variableId) => throw null;
         public Agility.Sdk.Model.QuickApps.QuickAppWithSupportingData GetQuickApp(string sessionId, Agility.Sdk.Model.QuickApps.QuickAppIdentity identity) => throw null;
         public Agility.Sdk.Model.Forms.Form GetForm(string sessionId, Agility.Sdk.Model.Forms.FormIdentity formIdentity) => throw null;
         public Agility.Sdk.Model.Client.ClientSession2 LogOnWithPassword2(Agility.Sdk.Model.Client.ClientIdentity clientIdentity) => throw null;

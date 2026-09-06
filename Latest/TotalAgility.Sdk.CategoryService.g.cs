@@ -13,5 +13,6 @@ namespace TotalAgility.Sdk
         public void DeleteCategory(string sessionId, Agility.Sdk.Model.Categories.CategoryIdentity category) { }
         public Agility.Sdk.Model.Categories.CategorySummaryCollection GetImmediateSubcategories(string sessionId, Agility.Sdk.Model.Categories.CategoryIdentity parentCategoryIdentity) => throw null;
         public bool HasAccess(string sessionId, Agility.Sdk.Model.Categories.CategoryIdentity category) => throw null;
+        public Agility.Sdk.Model.Categories.CategoryAssociations GetCategoryAssociations(string sessionId, Agility.Sdk.Model.Categories.CategoryIdentity categoryIdentity) => throw null;
     }
 }

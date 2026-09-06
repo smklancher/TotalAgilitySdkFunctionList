@@ -41,6 +41,7 @@ namespace TotalAgility.Sdk
         public void DeleteNavigationMenu(string sessionId, Agility.Sdk.Model.Navigation.NavigationMenuIdentity navigationMenuIdentity, Agility.Sdk.Model.Categories.CategoryIdentity categoryIdentity) { }
         public void UpdateNavigationMenu(string sessionId, Agility.Sdk.Model.Navigation.NavigationMenu navigationMenu, string newNavigationMenuId) { }
         public Agility.Sdk.Model.Navigation.NavigationMenuIdentity AddNavigationMenu(string sessionId, Agility.Sdk.Model.Navigation.NavigationMenu navigationMenu) => throw null;
+        public void UpdateQuickAppProcessSettings(string sessionId, Agility.Sdk.Model.Processes.AllowedProcess allowedProcess, Agility.Sdk.Model.QuickApps.QuickAppProcessSettings quickAppProcessSettings, Agility.Sdk.Model.BusinessRules.BusinessRuleIdentity associatedBusinessRule) { }
         public Agility.Sdk.Model.Navigation.NavigationControlCollection GetNavigationControls(string sessionId) => throw null;
         public Agility.Sdk.Model.Navigation.NavigationMenuIdentityCollection GetNavigationMenus(string sessionId, Agility.Sdk.Model.Forms.NavigationMenuFilter navigationMenuFilter) => throw null;
         public Agility.Sdk.Model.Navigation.NavigationMenu GetNavigationMenu(string sessionId, Agility.Sdk.Model.Navigation.NavigationMenuIdentity navigationMenuIdentity) => throw null;
@@ -63,10 +64,12 @@ namespace TotalAgility.Sdk
         public void UpdateDASConnectionString(string sessionId, string connectionString, string oldConnectionString) { }
         public Agility.Sdk.Model.Server.StringCollection GetDASConnectionStrings(string sessionId) => throw null;
         public Agility.Sdk.Model.JobSchedulers.JobScheduleIdentity AddJobSchedule(string sessionId, Agility.Sdk.Model.JobSchedulers.JobSchedule jobSchedule) => throw null;
+        public Agility.Sdk.Model.JobSchedulers.ScheduleIdentity AddSchedule(string sessionId, Agility.Sdk.Model.JobSchedulers.NewSchedule newSchedule) => throw null;
         public Agility.Sdk.Model.BusinessCalendar.TimeCategoryCollection GetTimeCategories(string sessionId) => throw null;
         public Agility.Sdk.Model.Server.SkillLevelCollection GetSkillLevels(string sessionId) => throw null;
         public Agility.Sdk.Model.Variables.VariableSummaryCollection GetServerVariables(string sessionId, Agility.Sdk.Model.Server.ServerVariablesFilter serverVariablesFilter) => throw null;
         public void DeleteJobSchedule(string sessionId, Agility.Sdk.Model.JobSchedulers.JobScheduleIdentity jobScheduleIdentity) { }
+        public void DeleteSchedule(string sessionId, Agility.Sdk.Model.JobSchedulers.ScheduleIdentity scheduleIdentity) { }
         public Agility.Sdk.Model.Server.SkillLevel GetSkillLevel(string sessionId, short skillLevel) => throw null;
         public Agility.Sdk.Model.Server.NoteTypeCollection GetNoteTypes(string sessionId) => throw null;
         public void RemoveAllAuditLogEntries(string sessionId) { }
@@ -76,12 +79,14 @@ namespace TotalAgility.Sdk
         public Agility.Sdk.Model.Audit.AuditEntryCollection GetAuditEntries(string sessionId, Agility.Sdk.Model.Audit.AuditTypeCollection auditTypes, System.DateTime fromDate, System.DateTime toDate) => throw null;
         public Agility.Sdk.Model.Audit.AuditTypeCollection GetAuditEntryTypes(string sessionId) => throw null;
         public void UpdateJobSchedule(string sessionId, Agility.Sdk.Model.JobSchedulers.JobSchedule jobSchedule) { }
+        public void UpdateSchedule(string sessionId, Agility.Sdk.Model.JobSchedulers.UpdatedSchedule updatedSchedule) { }
         public void AddServerVariable(string sessionId, Agility.Sdk.Model.Variables.VariableSummary variableSummary) { }
         public void UpdateServerVariable(string sessionId, Agility.Sdk.Model.Variables.VariableSummary variableSummary) { }
         public void UpdateServerVariables(string sessionId, Agility.Sdk.Model.Variables.VariableValue2Collection updatedVariables) { }
         public void DeleteServerVariable(string sessionId, Agility.Sdk.Model.Variables.VariableSummary variableSummary) { }
         public Agility.Sdk.Model.JobSchedulers.JobScheduleSummaryCollection GetJobSchedules(string sessionId, Agility.Sdk.Model.JobSchedulers.JobScheduleFilter jobScheduleFilter) => throw null;
         public Agility.Sdk.Model.JobSchedulers.JobSchedule GetJobSchedule(string sessionId, Agility.Sdk.Model.JobSchedulers.JobScheduleIdentity jobScheduleIdentity) => throw null;
+        public Agility.Sdk.Model.JobSchedulers.Schedule GetSchedule(string sessionId, Agility.Sdk.Model.JobSchedulers.ScheduleIdentity scheduleIdentity, Agility.Sdk.Model.Categories.CategoryIdentity categoryIdentity) => throw null;
         public void AddNoteType(string sessionId, Agility.Sdk.Model.Server.NoteType noteType) { }
         public Agility.Sdk.Model.Component.DotNetComponent InterrogateDotNetComponent(string sessionId, Agility.Sdk.Model.Component.DotNetComponentIdentity componentIdentity) => throw null;
         public Agility.Sdk.Model.Component.DotNetMethod InterrogateDotNetMethod(string sessionId, Agility.Sdk.Model.Component.DotNetMethodIdentity dotNetMethodIdentity) => throw null;
@@ -125,7 +130,7 @@ namespace TotalAgility.Sdk
         public Agility.Sdk.Model.License.LicenseServers GetProductLicenseServers2() => throw null;
         public void UpdateProductLicenseServers(string sessionId, Agility.Sdk.Model.License.LicenseServers licenseServers) { }
         public void UpdateProductLicenseServers2(Agility.Sdk.Model.License.LicenseServers licenseServers) { }
-        public Agility.Sdk.Model.License.ProductLicenses GetProductLicenses(string sessionId, Agility.Sdk.Model.License.LicenseServer licenseServer) => throw null;
+        public Agility.Sdk.Model.License.ProductLicenses GetProductLicenses(string sessionId, Agility.Sdk.Model.License.LicenseServer licenseServer, bool getExpiredLicenses = false) => throw null;
         public bool IsWebServiceReferenceInUse(string sessionId, Agility.Sdk.Model.References.WebServices.WebServiceReferenceIdentity webServiceReferenceIdentity) => throw null;
         public byte[] ExportPackage(string sessionId, Agility.Sdk.Model.Package.PackageExportOptions options) => throw null;
         public void ImportPackage(Agility.Sdk.Model.Package.ImportPackageParameter importParameter) { }
@@ -146,12 +151,14 @@ namespace TotalAgility.Sdk
         public void SaveLocalisationStrings2(string sessionId, Agility.Sdk.Model.Server.LocalisationIdentity2 localisationIdentity, Agility.Sdk.Model.Server.LocalisationStringsCollection localisationStrings) { }
         public Agility.Sdk.Model.WorkAllocation.WorkAllocationRuleImportErrorCollection ImportWorkAllocationRules(string sessionId, Agility.Sdk.Model.WorkAllocation.ExportedWorkAllocationRuleCollection workAllocationRulesToImport, bool overwrite) => throw null;
         public Agility.Sdk.Model.References.WebServices.RestfulServiceOutput ExecuteRestfulWebService(string sessionId, Agility.Sdk.Model.References.WebServices.RestfulService restfulService, Agility.Sdk.Model.References.WebServices.RestfulServiceInputCollection inputs, Agility.Sdk.Model.References.WebServices.RestfulServiceExpressionCollection expressions) => throw null;
+        public Agility.Sdk.Model.References.WebServices.RestfulServiceOutputData ExecuteRestfulWebService2(string sessionId, Agility.Sdk.Model.References.WebServices.RestfulServiceInputData restfulServiceInput) => throw null;
         public Agility.Sdk.Model.Server.LocalisationStringsImportErrorCollection ImportLocalisationStrings(string sessionId, Agility.Sdk.Model.Server.ExportedLocalisationStringsCollection localisationStringsToImport) => throw null;
         public Agility.Sdk.Model.Server.LocalisationStringsImportErrorCollection ImportLocalisationStrings2(string sessionId, Agility.Sdk.Model.Server.ExportedLocalisationStringsCollection localisationStringsToImport, bool autoReleaseForms) => throw null;
         public Agility.Sdk.Model.Navigation.NavigationMenu2 GetNavigationMenu2(string sessionId, Agility.Sdk.Model.Navigation.NavigationMenuIdentity navigationMenuIdentity) => throw null;
         public Agility.Sdk.Model.Navigation.NavigationMenuIdentity AddNavigationMenu2(string sessionId, Agility.Sdk.Model.Navigation.NavigationMenu2 navigationMenu) => throw null;
         public void UpdateNavigationMenu2(string sessionId, Agility.Sdk.Model.Navigation.NavigationMenu2 navigationMenu, string newNavigationMenuId) { }
         public Agility.Sdk.Model.Server.WorkerTaskSummaryCollection GetSystemTasks(string sessionId) => throw null;
+        public Agility.Sdk.Model.Server.MonitorReportingCountCollection GetMonitorReportingCounts(string sessionId) => throw null;
         public Agility.Sdk.Model.Server.WorkerTaskSummary2Collection GetSystemTasks2(string sessionId) => throw null;
         public Agility.Sdk.Model.Server.FailedNonSystemTasksCollection GetFailedNonSystemTasks(string sessionId) => throw null;
         public void ActivateFailedNonSystemTasks(string sessionId, Agility.Sdk.Model.Server.NonSystemTasksFilter nonSystemTasksFilter) { }
@@ -160,7 +167,7 @@ namespace TotalAgility.Sdk
         public void UpdateSystemTaskSettings(string sessionId, Agility.Sdk.Model.Server.WorkerTaskSummary systemTaskSettings) { }
         public void UpdateSystemTaskSettings2(string sessionId, Agility.Sdk.Model.Server.WorkerTaskSummary2 systemTaskSettings) { }
         public void UpdateFederatedAuthenticationSetting(string sessionId, bool useFederatedAuthentication) { }
-        public Agility.Sdk.Model.Capture.Import.FaxUserCollection GetFaxUsers(string sessionId, Agility.Sdk.Model.Capture.Import.ImportFaxServer importFaxServer) => throw null;
+        public Agility.Sdk.Model.Capture.Import.FaxUserCollection GetFaxUsers(string sessionId, Agility.Sdk.Model.Capture.Import.ImportFaxServer importFaxServer, Agility.Sdk.Model.Capture.Import.ImportSourceIdentity importSourceIdentity, Agility.Sdk.Model.Capture.Import.ImportConnectionIdentity importConnectionIdentity) => throw null;
         public void TestMailbox(string sessionId, Agility.Sdk.Model.Capture.Import.ImportSource importSource, Agility.Sdk.Model.Capture.Import.ImportConnectionSummary importConnectionSummary) { }
         public void TestArchivePath(string sessionId, string archivePath, Agility.Sdk.Model.Capture.Import.ImportConnectionSummary importConnectionSummary) { }
         public void TestImportConnection(string sessionId, Agility.Sdk.Model.Capture.Import.ImportConnection importConnection) { }
@@ -221,5 +228,12 @@ namespace TotalAgility.Sdk
         public void SaveCustomSecurityStorageSettings(string sessionId, Agility.Sdk.Model.Server.CustomSecureStorageProcesses customSecureStorageProcesses) { }
         public string GetHelpURL(string sessionId) => throw null;
         public string GetKCMDesignerURL(string sessionId) => throw null;
+        public Agility.Sdk.Model.DeploymentSchedules.DeploymentScheduleHistoryCollection GetDeploymentScheduleHistory(string sessionId, Agility.Sdk.Model.JobSchedulers.JobScheduleIdentity jobScheduleIdentity) => throw null;
+        public Agility.Sdk.Model.CloudExtract.CloudExtractInfo GetCloudExtractInfo(string sessionId, bool refreshKey) => throw null;
+        public void UpdateUseSecurityKeyForResourcePasswords(string sessionId, bool useSecurityKeyForResourcePasswords) { }
+        public bool DoesSecurityKeyExist(string sessionId) => throw null;
+        public Agility.Sdk.Model.QuickApps.QuickAppAccessSettings GetQuickAppAccessSettings(string sessionId) => throw null;
+        public Agility.Sdk.Model.Server.JsonPayload GenerateSdkJsonPayload(string sessionId, Agility.Sdk.Model.Component.DotNetMethodIdentity dotNetMethodIdentity) => throw null;
+        public Agility.Sdk.Model.Tenants.PendingUpgradeConfiguration GetPendingUpgradeConfiguration(string sessionId, string currentClientProductVersion, short clientProductType) => throw null;
     }
 }

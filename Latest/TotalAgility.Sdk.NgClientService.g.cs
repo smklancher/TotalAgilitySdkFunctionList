@@ -9,5 +9,7 @@ namespace TotalAgility.Sdk
         public Agility.Sdk.Model.Client.NgClientSession LogOnWithPassword(Agility.Sdk.Model.Users.UserIdentityWithPassword userIdentityWithPassword) => throw null;
         public Agility.Sdk.Model.Client.NgClientSession LogOnUsingWindowsAuthentication(short logOnProtocol, bool unconditionalLogOn, bool checkForSecureSession) => throw null;
         public Agility.Sdk.Model.Client.ClientWorkerResource GetClientWorkerResource(Agility.Sdk.Model.Resources.ResourceIdentity resourceIdentity) => throw null;
+        public Agility.Sdk.Model.Resources.ResourceSummaryCollection GetResources(string sessionId, Agility.Sdk.Model.Resources.ResourceFilter2 resourceFilter, Agility.Sdk.Model.Resources.ResourceIconSettings resourceIconSettings, int maxNumberToRetrieve) => throw null;
+        public Agility.Sdk.Model.Resources.ResourceSummaryCollection GetGroupResourceMembers(string sessionId, Agility.Sdk.Model.Resources.ResourceIdentity resourceIdentity, int maxNumberToRetrieve) => throw null;
     }
 }

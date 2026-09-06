@@ -135,5 +135,11 @@ namespace TotalAgility.Sdk
         public Agility.Sdk.Model.Processes.ProcessIdentityCollection GetProcessesSummary(string sessionId, Agility.Sdk.Model.Processes.ProcessesSummaryFilter processesSummaryFilter) => throw null;
         public Agility.Sdk.Model.Variables.VariableAssociationCollection GetAssociatedServerVariables(string sessionId, Agility.Sdk.Model.Processes.ProcessIdentity processIdentity) => throw null;
         public Agility.Sdk.Model.Integration.IntegrationSiteIdentity2Collection GetAssociatedIntegrations(string sessionId, Agility.Sdk.Model.Processes.ProcessIdentity processIdentity) => throw null;
+        public Agility.Sdk.Model.Processes.CompareProcessOutput CompareProcess(string sessionId, Agility.Sdk.Model.Processes.ProcessIdentity process, double versionToCompareWith) => throw null;
+        public Agility.Sdk.Model.Server.JsonPayload GenerateSdkJsonPayload(string sessionId, string methodName, Agility.Sdk.Model.Processes.ProcessIdentity processIdentity) => throw null;
+        public Agility.Sdk.Model.Server.JsonPayload GenerateRestSdkJsonPayload(string sessionId, string serviceUrl, Agility.Sdk.Model.Processes.ProcessIdentity processIdentity) => throw null;
+        public Agility.Sdk.Model.Processes.ProcessItemCollection GetProcessUnusedItems(string sessionId, Agility.Sdk.Model.Processes.ProcessIdentity processIdentity, Agility.Sdk.Model.Processes.ProcessItemCollection processItems) => throw null;
+        public Agility.Sdk.Model.Processes.ProcessItemCollection GetSkinUnusedItems(string sessionId, Agility.Sdk.Model.Processes.ProcessIdentity processIdentity, Agility.Sdk.Model.Processes.ProcessItemCollection processItems) => throw null;
+        public bool IsEventInUseInCaseOrFragments(string sessionId, Agility.Sdk.Model.CaseProcesses.CaseIdentity caseIdentity, string eventName) => throw null;
     }
 }

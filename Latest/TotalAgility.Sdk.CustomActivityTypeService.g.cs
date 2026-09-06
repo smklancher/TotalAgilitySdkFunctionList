@@ -11,6 +11,7 @@ namespace TotalAgility.Sdk
         public void DeleteCustomService(string sessionId, Agility.Sdk.Model.Activities.CustomServiceIdentity customServiceIdentity) { }
         public Agility.Sdk.Model.Activities.CustomService GetCustomService(string sessionId, Agility.Sdk.Model.Activities.CustomServiceIdentity customServiceIdentity) => throw null;
         public Agility.Sdk.Model.Activities.CustomServiceOutputCollection ExecuteCustomService(string sessionId, Agility.Sdk.Model.Activities.CustomServiceIdentity customServiceIdentity, Agility.Sdk.Model.Activities.CustomServiceInputCollection inputs) => throw null;
+        public Agility.Sdk.Model.Activities.CustomServiceOutputCollection ExecuteCustomService2(string sessionId, Agility.Sdk.Model.Activities.CustomServiceExecutionData customServiceExecutionData) => throw null;
         public Agility.Sdk.Model.Activities.CustomServiceAssociations GetCustomServiceAssociations(string sessionId, Agility.Sdk.Model.Activities.CustomServiceIdentity customServiceIdentity) => throw null;
     }
 }

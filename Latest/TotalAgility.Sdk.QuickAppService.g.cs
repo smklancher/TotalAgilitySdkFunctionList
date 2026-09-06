@@ -19,5 +19,9 @@ namespace TotalAgility.Sdk
         public Agility.Sdk.Model.QuickClassification.QuickClassificationInfo SaveQuickClassificationGroup(string sessionId, Agility.Sdk.Model.QuickClassification.QuickClassificationInfo quickClassificationInfo, short status) => throw null;
         public double RunQuickClassificationBenchmark(string sessionId, Agility.Sdk.Model.QuickClassification.QuickClassificationInfo quickClassificationInfo) => throw null;
         public Agility.Sdk.Model.Processes.AllowedProcessCollection GetExposedProcesses(string sessionId) => throw null;
+        public Agility.Sdk.Model.QuickApps.QuickAppSearchItemResultCollection SearchItems(string sessionId, Agility.Sdk.Model.QuickApps.QuickAppSearchItemsFilter searchItemFilter) => throw null;
+        public void ForceUnlockQuickApp(string sessionId, Agility.Sdk.Model.QuickApps.QuickAppIdentity quickAppIdentity) { }
+        public Agility.Sdk.Model.BusinessRules.BusinessRule GetBusinessRule(string sessionId, Agility.Sdk.Model.BusinessRules.BusinessRuleIdentity businessRuleIdentity) => throw null;
+        public Agility.Sdk.Model.Email.EmailServerSettings GetEmailServerSettings(string sessionId) => throw null;
     }
 }
