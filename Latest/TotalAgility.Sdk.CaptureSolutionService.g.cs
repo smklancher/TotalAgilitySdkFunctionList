@@ -10,7 +10,8 @@ namespace TotalAgility.Sdk
         public Agility.Sdk.Model.CaptureSolutions.CaptureSolution GetCaptureSolution(string sessionId, Agility.Sdk.Model.CaptureSolutions.CaptureSolutionIdentity identity) => throw null;
         public Agility.Sdk.Model.CaptureSolutions.CaptureSolutionSummary SaveCaptureSolution(string sessionId, Agility.Sdk.Model.CaptureSolutions.CaptureSolution captureSolution) => throw null;
         public Agility.Sdk.Model.Assets.AssetIdentity CreateExportZip(string sessionId, string folderId) => throw null;
-        public Agility.Sdk.Model.CaptureSolutions.CaptureSolutionSummary PublishCaptureSolution(string sessionId, Agility.Sdk.Model.CaptureSolutions.CaptureSolutionIdentity captureSolutionIdentity, Agility.Sdk.Model.CaptureSolutions.CaptureSolution captureSolution) => throw null;
+        public Agility.Sdk.Model.Assets.AssetIdentity CreateExportZip2(string sessionId, Agility.Sdk.Model.CaptureSolutions.ExportZipInput exportZipInput) => throw null;
+        public Agility.Sdk.Model.CaptureSolutions.CaptureSolutionPublishResult PublishCaptureSolution(string sessionId, Agility.Sdk.Model.CaptureSolutions.CaptureSolutionIdentity captureSolutionIdentity, Agility.Sdk.Model.CaptureSolutions.CaptureSolution captureSolution) => throw null;
         public void DeleteCaptureSolution(string sessionId, Agility.Sdk.Model.CaptureSolutions.CaptureSolutionIdentity captureSolutionIdentity, bool deleteAllVersions) { }
         public void LockCaptureSolution(string sessionId, Agility.Sdk.Model.CaptureSolutions.CaptureSolutionIdentity identity) { }
         public void UnlockCaptureSolution(string sessionId, Agility.Sdk.Model.CaptureSolutions.CaptureSolutionIdentity identity) { }
@@ -22,5 +23,9 @@ namespace TotalAgility.Sdk
         public Agility.Sdk.Model.CaptureSolutions.Extraction.ExtractionTrainingResultCollection TrainAndExtract(string sessionId, string captureProjectId, Agility.Sdk.Model.CaptureSolutions.DocumentTypeCollection documentTypes) => throw null;
         public bool IsTransformationServerInstanceAvailable(string sessionId) => throw null;
         public Agility.Sdk.Model.Processes.AllowedProcessCollection GetExposedProcesses(string sessionId) => throw null;
+        public Agility.Sdk.Model.CaptureSolutions.PredefinedDocumentTypeCollection GetPredefinedDocumentTypes(string sessionId) => throw null;
+        public Agility.Sdk.Model.CaptureSolutions.Classification.ClassificationTestResultCollection TestClassification(string sessionId, Agility.Sdk.Model.CaptureSolutions.CaptureSolution captureSolution, Agility.Sdk.Model.CaptureSolutions.CaptureDocumentCollection testDocuments) => throw null;
+        public Agility.Sdk.Model.CaptureSolutions.Extraction.DocumentTrainAndExtractResultCollection TestExtraction(string sessionId, Agility.Sdk.Model.CaptureSolutions.DocumentType documentType, Agility.Sdk.Model.CaptureSolutions.CaptureDocumentCollection testDocuments) => throw null;
+        public Agility.Sdk.Model.CaptureSolutions.Extraction.DocumentTrainAndExtractResult DetectTables(string sessionId, string documentId) => throw null;
     }
 }

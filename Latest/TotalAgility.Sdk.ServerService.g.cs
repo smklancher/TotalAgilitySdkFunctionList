@@ -136,6 +136,7 @@ namespace TotalAgility.Sdk
         public void ImportPackage(Agility.Sdk.Model.Package.ImportPackageParameter importParameter) { }
         public Agility.Sdk.Model.Package.PackageInformation GetPackageInformation(string sessionId, byte[] packageData) => throw null;
         public Agility.Sdk.Model.Server.LoopOutput ExecuteLoop(string sessionId, object complexVariableValue, int numberOfColumns, double startIndex, Agility.Sdk.Model.Variables.ComplexVarColumnMappingCollection varMembers) => throw null;
+        public Agility.Sdk.Model.Server.LoopOutput ExecuteLoop2(string sessionId, Agility.Sdk.Model.Server.LoopInput loopInput) => throw null;
         public void SendEmail(string sessionId, Agility.Sdk.Model.Email.EmailInfo emailInfo, string smtpServerName) { }
         public void SendEmail2(string sessionId, Agility.Sdk.Model.Email.EmailInfo2 emailInfo) { }
         public void SendEmail3(string sessionId, Agility.Sdk.Model.Email.EmailInfo3 emailInfo, string smtpServerName, Agility.Sdk.Model.Variables.InputVariableCollection inputVariables) { }
@@ -237,5 +238,7 @@ namespace TotalAgility.Sdk
         public Agility.Sdk.Model.QuickApps.QuickAppAccessSettings GetQuickAppAccessSettings(string sessionId) => throw null;
         public Agility.Sdk.Model.Server.JsonPayload GenerateSdkJsonPayload(string sessionId, Agility.Sdk.Model.Component.DotNetMethodIdentity dotNetMethodIdentity) => throw null;
         public Agility.Sdk.Model.Tenants.PendingUpgradeConfiguration GetPendingUpgradeConfiguration(string sessionId, string currentClientProductVersion, short clientProductType) => throw null;
+        public void ValidateCertificate(string sessionId, string base64Cert, string certPassword) { }
+        public Agility.Sdk.Model.AIProxyServices.AIProxyServiceInfo GetAIProxyServiceInfo(string sessionId, bool generateNewAPIKey) => throw null;
     }
 }

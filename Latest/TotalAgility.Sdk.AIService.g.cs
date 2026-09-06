@@ -35,6 +35,7 @@ namespace TotalAgility.Sdk
         public Agility.Sdk.Model.Integration.RagAI.RagSearchResult ExecuteRagSearch(string sessionId, Agility.Sdk.Model.Integration.RagAI.RagSearchSettings settings, string queryText) => throw null;
         public void ExecuteDeleteDocsRagActivity(string sessionId, Agility.Sdk.Model.Integration.RagAI.DeleteDocsRagActivitySettings settings) { }
         public Agility.Sdk.Model.Integration.GenerativeAI.GeneratedDecisionTable GetGeneratedDecisionTable(string sessionId, Agility.Sdk.Model.Server.WorkerTaskIdentity workerTaskIdentity) => throw null;
-        public void ExecuteAddUpdateDocsRagActivity(string sessionId, Agility.Sdk.Model.Integration.RagAI.AddUpdateDocsRagActivitySettings settings) { }
+        public string ExecuteAddUpdateDocsRagActivity(string sessionId, Agility.Sdk.Model.Integration.RagAI.AddUpdateDocsRagActivitySettings settings) => throw null;
+        public Agility.Sdk.Model.Integration.RagAI.RagSearchOutput ExecuteRagSearch2(string sessionId, Agility.Sdk.Model.Integration.RagAI.RagSearchInput input) => throw null;
     }
 }

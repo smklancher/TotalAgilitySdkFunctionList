@@ -25,7 +25,6 @@ namespace TotalAgility.Sdk
         public Agility.Sdk.Model.Capture.CaptureInitializationData LoadBatch3(string sessionId, short activityType, Agility.Sdk.Model.Activities.JobActivityIdentity jobActivityIdentity, Agility.Sdk.Model.Processes.ProcessIdentity processIdentity, Agility.Sdk.Model.Capture.BatchSettings batchSettings) => throw null;
         public string UnloadBatch2(string sessionId, string batchId, string jsonData, short sessionState) => throw null;
         public void CancelBatch(string sessionId, string batchId, string jsonData, short sessionState) { }
-        public void ReloadBatch(string sessionId, string batchId, string id, string typeId, bool isDocument) { }
         public object MovePages(string sessionId, Agility.Sdk.Model.Capture.ReportingData reportingData, Agility.Sdk.Model.Capture.CommonInfo commonInfo, string documentId, string destinationDocId, object pageIndexes, int insertIndex, object changeContainer) => throw null;
         public object MovePages2(string sessionId, Agility.Sdk.Model.Capture.ReportingData reportingData, Agility.Sdk.Model.Capture.CommonInfo commonInfo, string sourceDocumentId, string sourceFolderId, string destinationDocId, string destinationFolderId, string parentFolderId, object pageIndexes, int insertIndex, object changeContainer) => throw null;
         public object RotatePages(string sessionId, Agility.Sdk.Model.Capture.ReportingData reportingData, string documentId, Agility.Sdk.Model.Capture.CommonInfo commonInfo, object pageImages, short rotationType, object changeContainer) => throw null;

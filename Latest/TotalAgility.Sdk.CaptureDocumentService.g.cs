@@ -94,7 +94,6 @@ namespace TotalAgility.Sdk
         public Agility.Sdk.Model.Capture.LockedItemCollection GetJobVariableLockStatus(string sessionId, Agility.Sdk.Model.Capture.ReportingData reportingData, Agility.Sdk.Model.Jobs.JobIdentity jobIdentity) => throw null;
         public Agility.Sdk.Model.Capture.LockedItemCollection GetJobVariableLockStatusWithHierarchy(string sessionId, Agility.Sdk.Model.Capture.ReportingData reportingData, Agility.Sdk.Model.Jobs.JobIdentity jobIdentity) => throw null;
         public void ForceUnlockItem(string sessionId, Agility.Sdk.Model.Capture.ReportingData reportingData, Agility.Sdk.Model.Capture.LockedItemIdentity identity) { }
-        public Agility.Sdk.Model.Nlp.NamedEntityCollection GetNamedEntities(string sessionId, string documentId) => throw null;
         public System.IO.Stream GetDocumentFile(string sessionId, Agility.Sdk.Model.Capture.ReportingData reportingData, string documentId, string fileType) => throw null;
         public System.IO.Stream GetDocumentFile2(string sessionId, Agility.Sdk.Model.Capture.ReportingData reportingData, string documentId, Agility.Sdk.Model.Capture.DocumentFileOptions documentFileOptions) => throw null;
         public System.IO.Stream GetDocumentRenditionsFile(string sessionId, string documentId, string renditionName, string fileType) => throw null;

@@ -9,6 +9,7 @@ namespace TotalAgility.Sdk
         public string GetResourceName(string sessionId, Agility.Sdk.Model.Resources.ResourceIdentity resourceIdentity) => throw null;
         public Agility.Sdk.Model.Categories.CategoryIdentity GetWorkingCategory(string sessionId, Agility.Sdk.Model.Resources.ResourceIdentity resourceIdentity) => throw null;
         public Agility.Sdk.Model.Resources.ResourceSummaryCollection GetResources(string sessionId, Agility.Sdk.Model.Resources.ResourceFilter resourceFilter, Agility.Sdk.Model.Resources.ResourceIconSettings resourceIconSettings) => throw null;
+        public Agility.Sdk.Model.Resources.ResourceIdentity4Collection GetResourceIdentities(string sessionId, Agility.Sdk.Model.Resources.ResourceFilter resourceFilter) => throw null;
         public Agility.Sdk.Model.Resources.WorkerResource GetWorkerResource(string sessionId, Agility.Sdk.Model.Resources.ResourceIdentity resourceIdentity) => throw null;
         public Agility.Sdk.Model.Resources.WorkerGroupResource GetWorkerGroupResource(string sessionId, Agility.Sdk.Model.Resources.ResourceIdentity resourceIdentity) => throw null;
         public Agility.Sdk.Model.Resources.WorkerGroupResource3 GetWorkerGroupResource2(string sessionId, Agility.Sdk.Model.Resources.ResourceIdentity resourceIdentity) => throw null;
