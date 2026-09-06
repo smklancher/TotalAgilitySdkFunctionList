@@ -23,7 +23,6 @@ namespace TotalAgility.Sdk
         public Agility.Sdk.Model.CaseProcesses.LinkedCaseCollection GetLinkedCasesForCase(string sessionId, Agility.Sdk.Model.CaseProcesses.CaseIdentity caseIdentity) => throw null;
         public void UpdateLinkedCase(string sessionId, Agility.Sdk.Model.CaseProcesses.CaseIdentity sourceCase, Agility.Sdk.Model.CaseProcesses.CaseIdentity oldTargetCase, Agility.Sdk.Model.CaseProcesses.CaseIdentity newTargetCase, string linkDescription) { }
         public Agility.Sdk.Model.States.StateCollection GetCaseStates(string sessionId, Agility.Sdk.Model.Processes.ProcessIdentity processIdentity) => throw null;
-        public Agility.Sdk.Model.Variables.VariableAssociationCollection GetCaseVariableAssociations(string sessionId, Agility.Sdk.Model.Processes.ProcessIdentity processIdentity) => throw null;
         public bool DoesCaseExist(string sessionId, Agility.Sdk.Model.CaseProcesses.CaseIdentity caseIdentity) => throw null;
         public Agility.Sdk.Model.Jobs.JobEventCollection GetCaseEvents(string sessionId, Agility.Sdk.Model.CaseProcesses.CaseIdentity caseIdentity) => throw null;
         public void DeleteRoleMember(string sessionId, Agility.Sdk.Model.CaseProcesses.CaseIdentity caseIdentity, Agility.Sdk.Model.Roles.RoleIdentity roleIdentity, Agility.Sdk.Model.Resources.ResourceIdentity resourceIdentity) { }
@@ -47,10 +46,6 @@ namespace TotalAgility.Sdk
         public Agility.Sdk.Model.Jobs.JobWithDocumentsProgressOutput CreateCaseWithDocumentsAndProgress(string sessionId, Agility.Sdk.Model.Processes.ProcessIdentity processIdentity, string caseReference, Agility.Sdk.Model.CaseProcesses.CaseWithDocumentsInitialization caseWithDocumentsInitialization) => throw null;
         public Agility.Sdk.Model.Jobs.JobWithDocumentsProgressOutput2 CreateCaseWithDocumentsAndProgress2(string sessionId, Agility.Sdk.Model.Processes.ProcessIdentity processIdentity, string caseReference, Agility.Sdk.Model.CaseProcesses.CaseWithDocumentsInitialization caseWithDocumentsInitialization, Agility.Sdk.Model.Variables.VariableIdentityCollection variablesToReturn) => throw null;
         public void RaiseEvent(string sessionId, Agility.Sdk.Model.CaseProcesses.CaseIdentity caseIdentity, string eventName, string eventSource, Agility.Sdk.Model.Variables.InputVariableCollection updatedVariables) { }
-        public void ForceValidCaseDocument(string sessionId, Agility.Sdk.Model.CaseProcesses.CaseIdentity caseIdentity, Agility.Sdk.Model.Capture.DocumentTypeIdentity documentTypeIdentity, string comment) { }
-        public void ReevaluateCaseDocumentRequiredDates(string sessionId, Agility.Sdk.Model.CaseProcesses.CaseIdentity caseIdentity) { }
-        public bool ConfirmCaseDocument(string sessionId, Agility.Sdk.Model.CaseProcesses.CaseIdentity caseIdentity, Agility.Sdk.Model.Capture.DocumentTypeIdentity documentTypeIdentity) => throw null;
-        public void ReceivedCaseDocument(string sessionId, Agility.Sdk.Model.CaseProcesses.CaseIdentity caseIdentity, Agility.Sdk.Model.Capture.DocumentIdentity documentIdentity, bool useSource, string source, bool useStatus, short status) { }
         public Agility.Sdk.Model.Processes.ProcessIdentityCollection GetProcessesForCase(string sessionId, Agility.Sdk.Model.Categories.CategoryIdentity category, Agility.Sdk.Model.CaseProcesses.CaseIdentity caseIdentity) => throw null;
         public Agility.Sdk.Model.CaseProcesses.CaseIdentity GetCaseIdentity(string sessionId, Agility.Sdk.Model.CaseProcesses.CaseIdentity caseIdentity) => throw null;
         public void UpdateCaseReference(string sessionId, Agility.Sdk.Model.CaseProcesses.CaseIdentity caseIdentity, string newCaseReference) { }

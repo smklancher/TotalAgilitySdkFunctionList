@@ -10,6 +10,7 @@ namespace TotalAgility.Sdk
         public Agility.Sdk.Model.Forms.Events.SearchResult SearchFuzzyDatabase(string sessionId, Agility.Sdk.Model.Forms.Events.FuzzyDatabaseIdentity databaseIdentity, Agility.Sdk.Model.Forms.Events.SearchQuery query, Agility.Sdk.Model.Capture.DocumentTypeIdentity documentTypeIdentity) => throw null;
         public bool ValidateDocument(string sessionId, string documentId) => throw null;
         public bool ValidateFolder(string sessionId, string folderId) => throw null;
+        public bool ValidateHierarchy(string sessionId, string folderId) => throw null;
         public bool ValidateDocumentWithType(string sessionId, string documentId, Agility.Sdk.Model.Capture.DocumentTypeIdentity documentTypeIdentity) => throw null;
         public bool ValidateFolderWithType(string sessionId, string folderId, Agility.Sdk.Model.Capture.FolderTypeIdentity folderTypeIdentity) => throw null;
         public Agility.Sdk.Model.Capture.DocumentFieldValueCollection GetDocumentFieldValues(string sessionId, Agility.Sdk.Model.Capture.ReportingData reportingData, string documentId, Agility.Sdk.Model.Capture.RuntimeFieldIdentityCollection fieldIdentities) => throw null;
@@ -17,6 +18,7 @@ namespace TotalAgility.Sdk
         public Agility.Sdk.Model.Capture.FolderFieldValueCollection GetFolderFieldValues(string sessionId, Agility.Sdk.Model.Capture.ReportingData reportingData, string folderId, Agility.Sdk.Model.Capture.RuntimeFieldIdentityCollection fieldIdentities) => throw null;
         public Agility.Sdk.Model.Capture.FolderFieldValue GetFolderFieldValue(string sessionId, Agility.Sdk.Model.Capture.ReportingData reportingData, string folderId, Agility.Sdk.Model.Capture.RuntimeFieldIdentity fieldIdentity) => throw null;
         public Agility.Sdk.Model.Capture.Folder GetFolder(string sessionId, Agility.Sdk.Model.Capture.ReportingData reportingData, string folderId) => throw null;
+        public Agility.Sdk.Model.Capture.FolderCollection SearchFolders(string sessionId, Agility.Sdk.Model.Capture.ReportingData reportingData, Agility.Sdk.Model.Capture.FolderSearchCriteria folderSearchCriteria) => throw null;
         public void UpdateDocumentFieldValues(string sessionId, Agility.Sdk.Model.Capture.ReportingData reportingData, string documentId, Agility.Sdk.Model.Capture.RuntimeFieldCollection runtimeFields) { }
         public void UpdateDocumentFieldValue(string sessionId, Agility.Sdk.Model.Capture.ReportingData reportingData, string documentId, Agility.Sdk.Model.Capture.RuntimeField runtimeField) { }
         public void SetDocumentStatus(string sessionId, Agility.Sdk.Model.Capture.ReportingData reportingData, string documentId, short documentStatus, string message) { }
@@ -57,6 +59,7 @@ namespace TotalAgility.Sdk
         public void DeletePages(string sessionId, Agility.Sdk.Model.Capture.ReportingData reportingData, string documentId, Agility.Sdk.Model.Capture.PageIndexCollection pageIndexes) { }
         public Agility.Sdk.Model.Capture.DocumentSourceFile GetSourceFile(string sessionId, Agility.Sdk.Model.Capture.ReportingData reportingData, string documentId) => throw null;
         public Agility.Sdk.Model.Capture.Document GetDocument(string sessionId, Agility.Sdk.Model.Capture.ReportingData reportingData, string documentId) => throw null;
+        public Agility.Sdk.Model.Capture.DocumentCollection SearchDocuments(string sessionId, Agility.Sdk.Model.Capture.ReportingData reportingData, Agility.Sdk.Model.Capture.DocumentSearchCriteria documentSearchCriteria) => throw null;
         public Agility.Sdk.Model.Capture.Validation.ReviewValidationResult ValidateDocumentForReview(string sessionId, string documentId) => throw null;
         public Agility.Sdk.Model.Capture.Validation.ReviewValidationResult ValidateFolderForReview(string sessionId, string folderId) => throw null;
         public Agility.Sdk.Model.Capture.Validation.ReviewValidationResult ValidateDocumentForReviewWithType(string sessionId, string documentId, Agility.Sdk.Model.Capture.DocumentTypeIdentity documentTypeIdentity) => throw null;
@@ -71,6 +74,7 @@ namespace TotalAgility.Sdk
         public Agility.Sdk.Model.Capture.Formatting.FormattingResult FormatField(string sessionId, string value, Agility.Sdk.Model.Capture.Formatting.FormatterIdentity formatterIdentity) => throw null;
         public Agility.Sdk.Model.Capture.Formatting.FormattingResult FormatField2(string sessionId, string value, Agility.Sdk.Model.Capture.Formatting.FormatterIdentity formatterIdentity, Agility.Sdk.Model.BusinessRules.BusinessRuleInputCollection ruleInputs) => throw null;
         public string GetDocumentAsFile(string sessionId, string documentId, string fileLocation, string fileName) => throw null;
+        public string GetDocumentAsFile2(string sessionId, string documentId, Agility.Sdk.Model.Capture.DocumentAsFileOptions options) => throw null;
         public string CreateOnlineLearningFolder(string sessionId, int maxSamples) => throw null;
         public Agility.Sdk.Model.Capture.DocumentSortResult GetDocumentsInOrder(string sessionId, string folderId, string field1NameForSort, string field2NameForSort, string field3NameForSort, bool ascending) => throw null;
         public Agility.Sdk.Model.Capture.FieldAlternativeCollection GetDocumentFieldAlternatives(string sessionId, string documentId, Agility.Sdk.Model.Capture.FieldIdentity fieldIdentity, int numberOfRowsToReturn) => throw null;
@@ -86,6 +90,7 @@ namespace TotalAgility.Sdk
         public void ForceUnlockItem(string sessionId, Agility.Sdk.Model.Capture.ReportingData reportingData, Agility.Sdk.Model.Capture.LockedItemIdentity identity) { }
         public Agility.Sdk.Model.Nlp.NamedEntityCollection GetNamedEntities(string sessionId, string documentId) => throw null;
         public System.IO.Stream GetDocumentFile(string sessionId, Agility.Sdk.Model.Capture.ReportingData reportingData, string documentId, string fileType) => throw null;
+        public System.IO.Stream GetDocumentFile2(string sessionId, Agility.Sdk.Model.Capture.ReportingData reportingData, string documentId, Agility.Sdk.Model.Capture.DocumentFileOptions documentFileOptions) => throw null;
         public System.IO.Stream GetDocumentRenditionsFile(string sessionId, string documentId, string renditionName, string fileType) => throw null;
         public void UpdateDocumentType(string sessionId, string documentId, Agility.Sdk.Model.Capture.DocumentTypeIdentity documentTypeIdentity) { }
         public void UpdateDocumentType2(string sessionId, Agility.Sdk.Model.Capture.ReportingData reportingData, string documentId, Agility.Sdk.Model.Capture.DocumentTypeIdentity documentTypeIdentity) { }
@@ -150,5 +155,11 @@ namespace TotalAgility.Sdk
         public void MarkDocumentAsFinished(string sessionId, Agility.Sdk.Model.Capture.ReportingData reportingData, string documentId) { }
         public void MarkFolderDocumentsAsFinished(string sessionId, Agility.Sdk.Model.Capture.ReportingData reportingData, string folderId) { }
         public string CreateExportZip(string sessionId, string folderId, string documentId, string fileLocation, string fileName) => throw null;
+        public Agility.Sdk.Model.Capture.DocumentTypeIdentityCollection GetDocumentTypeIdentities(string sessionId, Agility.Sdk.Model.Capture.ClassificationGroupIdentityCollection classificationGroups) => throw null;
+        public void StoreBinaryChunk(string sessionId, Agility.Sdk.Model.Capture.ReportingData reportingData, string chunkGroupId, int chunkIndex, byte[] data, int offset, int length) { }
+        public string MergeBinaryChunks(string sessionId, Agility.Sdk.Model.Capture.ReportingData reportingData, string chunkGroupId, string mimeType) => throw null;
+        public void DeleteBinaryChunks(string sessionId, Agility.Sdk.Model.Capture.ReportingData reportingData, string chunkGroupId) { }
+        public int GetBinaryChunksCount(string sessionId, Agility.Sdk.Model.Capture.ReportingData reportingData, string chunkGroupId) => throw null;
+        public void UpdateGeneratedPdf(string sessionId, Agility.Sdk.Model.Capture.ReportingData reportingData, string documentId, byte[] data, string binaryDataId) { }
     }
 }

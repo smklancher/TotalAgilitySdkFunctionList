@@ -6,10 +6,11 @@ namespace TotalAgility.Sdk
     public class DocumentSetService
     {
         public DocumentSetService(System.ServiceModel.Channels.Binding binding) { }
-        public void AddDocument(string sessionId, Agility.Sdk.Model.Jobs.JobIdentity jobIdentity, Agility.Sdk.Model.CaseProcesses.CaseIdentity caseIdentity, Agility.Sdk.Model.Capture.DocumentIdentity2 documentIdentity, bool useSource, string source, bool useStatus, short status) { }
-        public void AddDocuments(string sessionId, Agility.Sdk.Model.Jobs.JobIdentity jobIdentity, Agility.Sdk.Model.CaseProcesses.CaseIdentity caseIdentity, Agility.Sdk.Model.Capture.DocumentIdentity2Collection documentIdentityCollection, Agility.Sdk.Model.Capture.FolderIdentity folderIdentity, bool useSource, string source, bool useStatus, short status) { }
-        public void UpdateDocumentStatus(string sessionId, Agility.Sdk.Model.Jobs.JobIdentity jobIdentity, Agility.Sdk.Model.CaseProcesses.CaseIdentity caseIdentity, Agility.Sdk.Model.Capture.DocumentIdentity2Collection documentIdentityCollection, Agility.Sdk.Model.Capture.FolderIdentity folderIdentity, Agility.Sdk.Model.Capture.DocumentTypeIdentity documentTypeIdentity, short status) { }
-        public bool EvaluateDocumentRule(string sessionId, Agility.Sdk.Model.Jobs.JobIdentity jobIdentity, Agility.Sdk.Model.CaseProcesses.CaseIdentity caseIdentity, Agility.Sdk.Model.Capture.DocumentTypeIdentity documentTypeIdentity) => throw null;
-        public Agility.Sdk.Model.Jobs.JobDocumentTypeRuleResultCollection EvaluateDocumentSet(string sessionId, Agility.Sdk.Model.Jobs.JobIdentity jobIdentity, Agility.Sdk.Model.CaseProcesses.CaseIdentity caseIdentity) => throw null;
+        public Agility.Sdk.Model.DocumentSet.JobDocumentSet GetJobDocumentSet(string sessionId, Agility.Sdk.Model.Jobs.JobIdentity jobIdentity) => throw null;
+        public Agility.Sdk.Model.DocumentSet.JobDocumentSetStatus AddJobDocument(string sessionId, Agility.Sdk.Model.Jobs.JobIdentity jobIdentity, Agility.Sdk.Model.DocumentSet.JobDocument jobDocument) => throw null;
+        public Agility.Sdk.Model.DocumentSet.JobDocumentSetStatus AddDocumentToDocumentSet(string sessionId, Agility.Sdk.Model.Jobs.JobIdentity jobIdentity, Agility.Sdk.Model.DocumentSet.DocumentSetDocument documentSetDocument) => throw null;
+        public Agility.Sdk.Model.DocumentSet.JobDocumentSetStatus EvaluateJobDocumentSet(string sessionId, Agility.Sdk.Model.Jobs.JobIdentity jobIdentity) => throw null;
+        public Agility.Sdk.Model.DocumentSet.JobDocumentSetStatus RemoveJobDocument(string sessionId, Agility.Sdk.Model.Jobs.JobIdentity jobIdentity, Agility.Sdk.Model.DocumentSet.JobDocumentIdentity jobDocumentIdentity) => throw null;
+        public Agility.Sdk.Model.DocumentSet.JobDocumentSetStatus UpdateJobDocumentFields(string sessionId, Agility.Sdk.Model.Jobs.JobIdentity jobIdentity, Agility.Sdk.Model.DocumentSet.JobDocumentIdentity jobDocumentIdentity, Agility.Sdk.Model.DocumentSet.DocumentSetDocTypeFieldCollection fields) => throw null;
     }
 }

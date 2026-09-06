@@ -21,6 +21,11 @@ namespace TotalAgility.Sdk
         public void UpdateLookup(string sessionId, Agility.Sdk.Model.Lookups.Lookup lookup, bool overwrite) { }
         public Agility.Sdk.Model.Lookups.LookupSummaryCollection GetLookups(string sessionId, Agility.Sdk.Model.Lookups.LookupFilter lookupFilter) => throw null;
         public bool DeleteLookup(string sessionId, Agility.Sdk.Model.Lookups.LookupIdentity lookupIdentity) => throw null;
+        public void AddTextCode(string sessionId, Agility.Sdk.Model.Server.TextCodes.TextCode textCode) { }
+        public void UpdateTextCode(string sessionId, Agility.Sdk.Model.Server.TextCodes.TextCode textCode, bool overwrite) { }
+        public Agility.Sdk.Model.Server.TextCodes.TextCodeCollection GetTextCodes(string sessionId, Agility.Sdk.Model.Server.TextCodes.TextCodeFilter textCodeFilter) => throw null;
+        public Agility.Sdk.Model.Server.TextCodes.TextCode GetTextCode(string sessionId, string textCodeID) => throw null;
+        public void DeleteTextCode(string sessionId, string textCodeID) { }
         public void AddCurrencyCode(string sessionId, Agility.Sdk.Model.CurrencyCodes.CurrencyCode currencyCode) { }
         public void UpdateCurrencyCode(string sessionId, Agility.Sdk.Model.CurrencyCodes.CurrencyCode currencyCode, bool overwrite) { }
         public Agility.Sdk.Model.CurrencyCodes.CurrencyCodeCollection GetCurrencyCodes(string sessionId) => throw null;
@@ -156,8 +161,8 @@ namespace TotalAgility.Sdk
         public void UpdateSystemTaskSettings2(string sessionId, Agility.Sdk.Model.Server.WorkerTaskSummary2 systemTaskSettings) { }
         public void UpdateFederatedAuthenticationSetting(string sessionId, bool useFederatedAuthentication) { }
         public Agility.Sdk.Model.Capture.Import.FaxUserCollection GetFaxUsers(string sessionId, Agility.Sdk.Model.Capture.Import.ImportFaxServer importFaxServer) => throw null;
-        public void TestMailbox(string sessionId, Agility.Sdk.Model.Capture.Import.ImportSource importSource, string connector, string connectorPassword) { }
-        public void TestArchivePath(string sessionId, string archivePath, string messageConnector, string messageConnectorPassword) { }
+        public void TestMailbox(string sessionId, Agility.Sdk.Model.Capture.Import.ImportSource importSource, Agility.Sdk.Model.Capture.Import.ImportConnectionSummary importConnectionSummary) { }
+        public void TestArchivePath(string sessionId, string archivePath, Agility.Sdk.Model.Capture.Import.ImportConnectionSummary importConnectionSummary) { }
         public void TestImportConnection(string sessionId, Agility.Sdk.Model.Capture.Import.ImportConnection importConnection) { }
         public Agility.Sdk.Model.Capture.Import.ImportConnectionIdentity AddImportConnection(string sessionId, Agility.Sdk.Model.Capture.Import.ImportConnection importConnection) => throw null;
         public void DeleteImportConnection(string sessionId, Agility.Sdk.Model.Capture.Import.ImportConnectionIdentity importConnectionIdentity) { }
@@ -199,6 +204,8 @@ namespace TotalAgility.Sdk
         public Agility.Sdk.Model.Audit.AuditCategorisations GetAuditCategorisations(string sessionId) => throw null;
         public Agility.Sdk.Model.Capture.Scanning.ScanVrsProfileCollection GetScanVrsProfilesConfiguration(string sessionId, Agility.Sdk.Model.Capture.Scanning.ScanVrsProfileIdentityCollection vrsProfileIdentities) => throw null;
         public byte[] GetAssetData(string sessionId, string assetId) => throw null;
+        public byte[] GetAssetDataByNameAndType(string sessionId, string assetName, short assetType) => throw null;
+        public string AddAssetData2(string sessionId, string assetName, byte[] assetData, short assetType, Agility.Sdk.Model.Categories.CategoryIdentity categoryIdentity) => throw null;
         public string AddAssetData(string sessionId, string assetName, byte[] assetData) => throw null;
         public void DeleteAssetData(string sessionId, string assetId) { }
         public Agility.Sdk.Model.Capture.Import.LatestImportConnections GetLatestImportConnections(string sessionId) => throw null;
@@ -210,5 +217,6 @@ namespace TotalAgility.Sdk
         public Agility.Sdk.Model.Variables.VariableValue2 TestExpression(string sessionId, Agility.Sdk.Model.Variables.VariableValue3Collection inputVariables, string ruleText) => throw null;
         public Agility.Sdk.Model.Server.MachineServiceCollection GetMachineServices(string sessionId, Agility.Sdk.Model.Server.MachineServiceFilter machineServiceFilter) => throw null;
         public Agility.Sdk.Model.Server.StringCollection EncryptStrings(string sessionId, Agility.Sdk.Model.Server.StringCollection unencryptedData) => throw null;
+        public Agility.Sdk.Model.Capture.Import.MessageConnectorPoolIdentityCollection GetMessageConnectorPoolIdentities(string sessionId) => throw null;
     }
 }

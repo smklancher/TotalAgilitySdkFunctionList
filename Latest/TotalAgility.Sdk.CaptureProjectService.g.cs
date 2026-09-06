@@ -19,6 +19,7 @@ namespace TotalAgility.Sdk
         public Agility.Sdk.Model.Capture.ProjectInfo GetProjectInformation(string sessionId, Agility.Sdk.Model.Capture.ProjectIdentity projectIdentity) => throw null;
         public Agility.Sdk.Model.Capture.ProjectInfoCollection GetProjectInformationCollection(string sessionId, bool getProjectDetails) => throw null;
         public void SaveTrainingSets(Agility.Sdk.Model.Capture.TrainingSetData trainingSetData) { }
+        public void SaveBenchmarkSet(Agility.Sdk.Model.Capture.BenchmarkSetData benchmarkSetData) { }
         public System.IO.Stream GetTrainingSets(string sessionId, Agility.Sdk.Model.Capture.ProjectIdentity projectIdentity) => throw null;
         public Agility.Sdk.Model.Capture.ProjectIdentityCollection GetProjectsWithOnlineLearningEnabled(string sessionId) => throw null;
     }

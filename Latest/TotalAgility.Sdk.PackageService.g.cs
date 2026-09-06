@@ -30,5 +30,13 @@ namespace TotalAgility.Sdk
         public Agility.Sdk.Model.Resources.ResourceIdentityCollection GetRoleMembers(string sessionId, Agility.Sdk.Model.SpaPackages.SpaPackageItemCollection spaPackageItemCollection) => throw null;
         public Agility.Sdk.Model.SpaPackages.PackageDeploymentItems GetDeploymentItemsForPackage(string sessionId, Agility.Sdk.Model.SpaPackages.SpaPackageItemCollection spaPackageItems, bool includeDeviceSettings) => throw null;
         public Agility.Sdk.Model.SpaPackages.PackageDeploymentIdentityCollection GetPackageDeployments(string sessionId, Agility.Sdk.Model.SpaPackages.SpaPackageIdentity packageIdentity) => throw null;
+        public Agility.Sdk.Model.SpaPackages.DeploymentServerIdentity AddDeploymentServer(string sessionId, Agility.Sdk.Model.SpaPackages.DeploymentServer deploymentServer) => throw null;
+        public void UpdateDeploymentServer(string sessionId, Agility.Sdk.Model.SpaPackages.DeploymentServer deploymentServer) { }
+        public Agility.Sdk.Model.SpaPackages.DeploymentServer GetDeploymentServer(string sessionId, Agility.Sdk.Model.SpaPackages.DeploymentServerIdentity deploymentServerIdentity) => throw null;
+        public Agility.Sdk.Model.SpaPackages.DeploymentServerIdentityCollection GetDeploymentServers(string sessionId) => throw null;
+        public void DeleteDeploymentServer(string sessionId, Agility.Sdk.Model.SpaPackages.DeploymentServerIdentity deploymentServerIdentity) { }
+        public void LockPackage(string sessionId, Agility.Sdk.Model.SpaPackages.SpaPackageIdentity packageIdentity) { }
+        public void UnLockPackage(string sessionId, Agility.Sdk.Model.SpaPackages.SpaPackageIdentity packageIdentity, bool force) { }
+        public Agility.Sdk.Model.SpaPackages.PackageDeploymentResult DeployPackage(string sessionId, Agility.Sdk.Model.SpaPackages.Deployment deployment) => throw null;
     }
 }

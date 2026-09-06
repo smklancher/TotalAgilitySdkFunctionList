@@ -10,6 +10,7 @@ namespace TotalAgility.Sdk
         public Agility.Sdk.Model.Jobs.JobIdentity CreateJob(string sessionId, Agility.Sdk.Model.Processes.ProcessIdentity processIdentity, Agility.Sdk.Model.Jobs.JobInitialization jobInitialization) => throw null;
         public Agility.Sdk.Model.Jobs.JobIdentity CreateJobInCaseWithDocuments(string sessionId, Agility.Sdk.Model.Processes.ProcessIdentity caseProcessIdentity, Agility.Sdk.Model.CaseProcesses.CaseIdentity caseJobIdentity, Agility.Sdk.Model.Jobs.JobWithDocumentsInitialization jobWithDocsInitialization) => throw null;
         public Agility.Sdk.Model.States.StateHistoryCollection GetStateChangeHistory(string sessionId, Agility.Sdk.Model.Jobs.JobIdentity jobIdentity) => throw null;
+        public string GetJobState(string sessionId, Agility.Sdk.Model.Jobs.JobIdentity jobIdentity) => throw null;
         public Agility.Sdk.Model.Jobs.JobProperties GetJobProperties(string sessionId, Agility.Sdk.Model.Jobs.JobIdentity jobIdentity, Agility.Sdk.Model.Jobs.JobHistoryFilter filter) => throw null;
         public Agility.Sdk.Model.Processes.ProcessIdentity GetJobProcessIdentity(string sessionId, Agility.Sdk.Model.Jobs.JobIdentity jobIdentity) => throw null;
         public void UpdateJobExpectedFinishTime(string sessionId, Agility.Sdk.Model.Jobs.JobIdentity jobIdentity, System.DateTime expectedFinishTime, bool resetException) { }
@@ -107,38 +108,10 @@ namespace TotalAgility.Sdk
         public Agility.Sdk.Model.Jobs.JobList GetJobs4(string sessionId, Agility.Sdk.Model.Jobs.JobFilter4 jobFilter) => throw null;
         public Agility.Sdk.Model.Queries.JobQueryResult GetJobsWithQuery(string sessionId, bool useDefaultQuery, Agility.Sdk.Model.Queries.QueryIdentity queryIdentity, Agility.Sdk.Model.Jobs.JobQueryFilter jobQueryFilter) => throw null;
         public Agility.Sdk.Model.Queries.JobQueryResult2 GetJobsWithQueryAndFilter(string sessionId, Agility.Sdk.Model.Queries.QueryIdentity queryIdentity, Agility.Sdk.Model.Jobs.JobFieldValue jobFieldValue) => throw null;
+        public Agility.Sdk.Model.Queries.JobQueryResult2 GetJobsWithQueryAndMergedFilter(string sessionId, Agility.Sdk.Model.Queries.QueryIdentity queryIdentity, Agility.Sdk.Model.Jobs.JobFilterOverride jobFilterOverride) => throw null;
+        public int GetJobsCountWithQueryAndMergedFilter(string sessionId, Agility.Sdk.Model.Queries.QueryIdentity queryIdentity, Agility.Sdk.Model.Jobs.JobFilterOverride jobFilterOverride) => throw null;
         public Agility.Sdk.Model.Queries.JobQueryResult2 GetJobsWithQuery2(string sessionId, bool useDefaultQuery, Agility.Sdk.Model.Queries.QueryIdentity queryIdentity, Agility.Sdk.Model.Jobs.JobQueryFilter jobQueryFilter) => throw null;
         public int GetJobsCountWithQuery(string sessionId, Agility.Sdk.Model.Queries.QueryIdentity queryIdentity, Agility.Sdk.Model.Jobs.JobQueryFilter jobQueryFilter) => throw null;
-        public void ForceValidJobDocument(string sessionId, Agility.Sdk.Model.Jobs.JobIdentity jobIdentity, Agility.Sdk.Model.Capture.DocumentTypeIdentity documentTypeIdentity, string comment) { }
-        public void ReevaluateJobDocumentRequiredDates(string sessionId, Agility.Sdk.Model.Jobs.JobIdentity jobIdentity) { }
-        public Agility.Sdk.Model.Jobs.JobDocumentIdentityCollection GetJobDocumentsUsingType(string sessionId, Agility.Sdk.Model.Jobs.JobIdentity jobIdentity, Agility.Sdk.Model.Capture.DocumentTypeIdentity documentTypeIdentity) => throw null;
-        public bool ConfirmJobDocument(string sessionId, Agility.Sdk.Model.Jobs.JobIdentity jobIdentity, Agility.Sdk.Model.Capture.DocumentTypeIdentity documentTypeIdentity) => throw null;
-        public Agility.Sdk.Model.Jobs.JobDocumentTypeRuleResultCollection ConfirmJobDocuments(string sessionId, Agility.Sdk.Model.Jobs.JobIdentity jobIdentity, Agility.Sdk.Model.Capture.DocumentTypeIdentityCollection documentTypeIdentityCollection) => throw null;
-        public void ReceivedJobDocument(string sessionId, Agility.Sdk.Model.Jobs.JobIdentity jobIdentity, Agility.Sdk.Model.Capture.DocumentIdentity documentIdentity, bool useSource, string source, bool useStatus, short status) { }
-        public void ReceivedJobDocuments(string sessionId, Agility.Sdk.Model.Jobs.JobIdentity jobIdentity, Agility.Sdk.Model.Capture.DocumentIdentityCollection documentIdentityCollection, Agility.Sdk.Model.Capture.FolderIdentity folderIdentity, bool useSource, string source, bool useStatus, short status) { }
-        public void UpdateReceivedJobDocumentsStatus(string sessionId, Agility.Sdk.Model.Jobs.JobIdentity jobIdentity, Agility.Sdk.Model.Capture.DocumentIdentityCollection documentIdentityCollection, Agility.Sdk.Model.Capture.FolderIdentity folderIdentity, Agility.Sdk.Model.Capture.DocumentTypeIdentity documentTypeIdentity, short status) { }
-        public Agility.Sdk.Model.Jobs.JobDocumentCollection GetJobDocuments(string sessionId, Agility.Sdk.Model.Jobs.JobIdentity jobIdentity) => throw null;
-        public Agility.Sdk.Model.Jobs.JobDocumentRuleCollection GetJobDocumentRules(string sessionId, Agility.Sdk.Model.Jobs.JobIdentity jobIdentity) => throw null;
-        public void UpdateJobDocumentRequiredDate(string sessionId, Agility.Sdk.Model.Jobs.JobIdentity jobIdentity, Agility.Sdk.Model.Capture.DocumentTypeIdentity documentTypeIdentity, System.DateTime requiredDate) { }
-        public void AddJobDocumentRule(
-            string sessionId,
-            Agility.Sdk.Model.Jobs.JobIdentity jobIdentity,
-            string name,
-            bool restrictedDocument,
-            string description,
-            Agility.Sdk.Model.Capture.DocumentTypeIdentity documentTypeIdentity,
-            System.DateTime? dateRequired,
-            Agility.Sdk.Model.Milestones.MilestoneIdentity milestoneIdentity,
-            Agility.Sdk.Model.DocumentContainer.DocumentProcessBasicRule documentBasicRule,
-            Agility.Sdk.Model.DocumentContainer.DocumentProcessBusinessRule documentBusinessRule,
-            Agility.Sdk.Model.Processes.ProcessIdentity documentUploadProcess,
-            bool allowDeletion,
-            Agility.Sdk.Model.Processes.ProcessIdentity documentTypeDueProcess,
-            int documentTypeDueExceptionDuration
-            ) { }
-        public void DeleteJobDocumentRule(string sessionId, Agility.Sdk.Model.Jobs.JobIdentity jobIdentity, Agility.Sdk.Model.Capture.DocumentTypeIdentity documentTypeIdentity) { }
-        public void UpdateJobDocumentType(string sessionId, Agility.Sdk.Model.Jobs.JobIdentity jobIdentity, Agility.Sdk.Model.Capture.DocumentIdentity documentIdentity, Agility.Sdk.Model.Capture.DocumentTypeIdentity documentTypeIdentity) { }
-        public void UpdateJobDocumentRule(string sessionId, Agility.Sdk.Model.Jobs.JobIdentity jobIdentity, Agility.Sdk.Model.Capture.DocumentTypeIdentity documentTypeIdentity, System.DateTime dateRequired, string description, Agility.Sdk.Model.DocumentContainer.DocumentProcessBasicRule documentBasicRule) { }
         public Agility.Sdk.Model.Jobs.SyncJobWithDocuments CreateJobSyncWithDocuments(string sessionId, Agility.Sdk.Model.Processes.ProcessIdentity processIdentity, Agility.Sdk.Model.Jobs.JobWithDocumentsInitialization2 jobWithDocsInitialization, Agility.Sdk.Model.Variables.VariableIdentityCollection variablesToReturn) => throw null;
         public Agility.Sdk.Model.Jobs.SyncJobWithDocument CreateJobSyncWithDocument(string sessionId, Agility.Sdk.Model.Processes.ProcessIdentity processIdentity, Agility.Sdk.Model.Jobs.JobWithDocumentInitialization jobWithDocInitialization, Agility.Sdk.Model.Variables.VariableIdentityCollection variablesToReturn) => throw null;
         public void ArchiveJobs(string sessionId) { }

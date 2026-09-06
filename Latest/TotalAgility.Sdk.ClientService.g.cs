@@ -41,5 +41,11 @@ namespace TotalAgility.Sdk
         public Agility.Sdk.Model.Capture.Scanning.ScanVrsProfileIdentityCollection GetScanVrsProfiles(string sessionId) => throw null;
         public Agility.Sdk.Model.Capture.Separation.SeparationProfileIdentityCollection GetSeparationProfiles(string sessionId) => throw null;
         public Agility.Sdk.Model.JobSchedulers.JobScheduleSummaryCollection GetJobSchedules(string sessionId, Agility.Sdk.Model.JobSchedulers.JobScheduleFilter jobScheduleFilter) => throw null;
+        public void ExecuteTestPlan(string sessionId, Agility.Sdk.Model.Processes.ProcessIdentity processIdentity) { }
+        public Agility.Sdk.Model.Processes.Test.TestPlanOutputCollection GetExecuteTestPlanResult(string sessionId, Agility.Sdk.Model.Processes.ProcessIdentity process) => throw null;
+        public void CancelExecuteTestPlan(string sessionId, Agility.Sdk.Model.Processes.ProcessIdentity process) { }
+        public void ExecuteTestSuite(string sessionId, Agility.Sdk.Model.Processes.Test.TestSuiteIdentity testSuiteIdentity) { }
+        public Agility.Sdk.Model.Processes.Test.TestSuiteOutputCollection GetExecuteTestSuiteResult(string sessionId, Agility.Sdk.Model.Processes.Test.TestSuiteIdentity testSuiteIdentity) => throw null;
+        public void CancelExecuteTestSuite(string sessionId, Agility.Sdk.Model.Processes.Test.TestSuiteIdentity testSuiteIdentity) { }
     }
 }

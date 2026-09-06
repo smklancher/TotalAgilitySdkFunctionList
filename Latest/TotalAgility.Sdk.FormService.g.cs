@@ -69,6 +69,7 @@ namespace TotalAgility.Sdk
         public Agility.Sdk.Model.Forms.FormSummary3Collection GetFormVersions2(string sessionId, Agility.Sdk.Model.Forms.FormIdentity formIdentity) => throw null;
         public Agility.Sdk.Model.Forms.ExportedFormInfo ExportForms(string sessionId, Agility.Sdk.Model.Forms.FormIdentityCollection forms, Agility.Sdk.Model.Forms.FormExportOptions formExportOptions) => throw null;
         public Agility.Sdk.Model.Forms.Events.EventOutputDataCollection ExecuteFormEvents2(Agility.Sdk.Model.Forms.FormIdentity formIdentity, string methodName, Agility.Sdk.Model.Forms.Events.EventInputDataCollection eventsToExecute, string locale, string locale2, short formTargetDevice) => throw null;
+        public Agility.Sdk.Model.Forms.Events.EventOutputDataCollection ExecuteFormEvents3(string sessionId, Agility.Sdk.Model.Forms.FormIdentity formIdentity, string methodName, Agility.Sdk.Model.Forms.Events.EventInputDataCollection eventsToExecute, string locale, string locale2, short formTargetDevice) => throw null;
         public Agility.Sdk.Model.Forms.FormInitializationData GetFormInitializationData(string sessionId, Agility.Sdk.Model.Forms.FormInitializationInput formInitializationInput) => throw null;
         public Agility.Sdk.Model.Server.StringCollection BuildForms2(string sessionId, Agility.Sdk.Model.Forms.BuildForms.BuildFormInfoCollection buildFormInfoCollection) => throw null;
         public Agility.Sdk.Model.Forms.FormSummary4Collection GetForms3(string sessionId, Agility.Sdk.Model.Forms.FormFilter2 formFilter) => throw null;

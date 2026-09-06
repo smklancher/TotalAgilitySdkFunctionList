@@ -14,6 +14,7 @@ namespace TotalAgility.Sdk
         public void DeleteCaptureSolution(string sessionId, Agility.Sdk.Model.CaptureSolutions.CaptureSolutionIdentity captureSolutionIdentity, bool deleteAllVersions) { }
         public void LockCaptureSolution(string sessionId, Agility.Sdk.Model.CaptureSolutions.CaptureSolutionIdentity identity) { }
         public void UnlockCaptureSolution(string sessionId, Agility.Sdk.Model.CaptureSolutions.CaptureSolutionIdentity identity) { }
+        public Agility.Sdk.Model.Server.StringCollection GetBarcodeTypes(string sessionId) => throw null;
         public Agility.Sdk.Model.Server.StringCollection GetRecognitionLanguages(string sessionId) => throw null;
         public Agility.Sdk.Model.CaptureSolutions.Classification.ClassificationTrainingResultCollection AnalyzeClassificationTraining(string sessionId, Agility.Sdk.Model.CaptureSolutions.CaptureSolution captureSolution) => throw null;
         public Agility.Sdk.Model.CaptureSolutions.CaptureSolutionArtefacts GetAssociatedArtefacts(string sessionId, Agility.Sdk.Model.CaptureSolutions.CaptureSolutionIdentity captureSolutionIdentity) => throw null;

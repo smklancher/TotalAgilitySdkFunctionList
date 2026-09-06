@@ -17,6 +17,7 @@ namespace TotalAgility.Sdk
         public Agility.Sdk.Model.QuickClassification.QuickClassificationInfo GetQuickClassificationInfo(string sessionId, Agility.Sdk.Model.Capture.ClassificationGroupIdentity classificationGroupIdentity) => throw null;
         public Agility.Sdk.Model.CaptureSolutions.Classification.ClassificationTrainingResultCollection AnalyzeQuickClassificationTraining(string sessionId, Agility.Sdk.Model.QuickClassification.QuickClassificationInfo quickClassificationInfo) => throw null;
         public Agility.Sdk.Model.QuickClassification.QuickClassificationInfo SaveQuickClassificationGroup(string sessionId, Agility.Sdk.Model.QuickClassification.QuickClassificationInfo quickClassificationInfo, short status) => throw null;
+        public double RunQuickClassificationBenchmark(string sessionId, Agility.Sdk.Model.QuickClassification.QuickClassificationInfo quickClassificationInfo) => throw null;
         public Agility.Sdk.Model.Processes.AllowedProcessCollection GetExposedProcesses(string sessionId) => throw null;
     }
 }

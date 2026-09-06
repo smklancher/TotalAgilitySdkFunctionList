@@ -15,7 +15,7 @@ namespace TotalAgility.Sdk
         public Agility.Sdk.Model.States.StateIdentityCollection GetProcessStatesSummary(string sessionId, Agility.Sdk.Model.Processes.ProcessIdentity processIdentity) => throw null;
         public Agility.Sdk.Model.Processes.ProcessInfo GetProcessInfo(string sessionId, Agility.Sdk.Model.Processes.ProcessIdentity processIdentity, short processInfoFilter) => throw null;
         public Agility.Sdk.Model.Processes.ProcessSummaryCollection GetRecentProcesses(string sessionId, Agility.Sdk.Model.Processes.RecentProcessFilter filter) => throw null;
-        public string GetEmbeddedProcessViewerData(string sessionId, Agility.Sdk.Model.Processes.ProcessIdentity processIdentity, short dataFormat) => throw null;
+        public string GetEmbeddedProcessViewerData(string sessionId, Agility.Sdk.Model.Processes.ProcessIdentity processIdentity, short dataFormat, short testDebugMode) => throw null;
         public Agility.Sdk.Model.Milestones.MilestoneSummaryCollection GetProcessMilestones(string sessionId, Agility.Sdk.Model.Processes.ProcessIdentity processIdentity) => throw null;
         public Agility.Sdk.Model.Processes.ProcessSummaryCollection GetProcesses(string sessionId, Agility.Sdk.Model.Processes.ProcessFilter filter) => throw null;
         public Agility.Sdk.Model.States.StateIdentityCollection GetAllProcessStates(string sessionId) => throw null;

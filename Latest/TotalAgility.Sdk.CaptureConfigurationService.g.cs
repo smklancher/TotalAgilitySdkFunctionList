@@ -69,6 +69,7 @@ namespace TotalAgility.Sdk
         public Agility.Sdk.Model.Capture.CaptureConfigurationItems GetCaptureConfigurationItems(string sessionId, Agility.Sdk.Model.Capture.DocumentTypeIdentityCollection documentTypeIdentityCollection, Agility.Sdk.Model.Capture.FolderTypeIdentityCollection folderTypeIdentityCollection) => throw null;
         public Agility.Sdk.Model.Capture.FolderTypeAssociations GetFolderTypeAssociations(string sessionId, Agility.Sdk.Model.Capture.FolderTypeIdentity folderTypeIdentity, short folderTypeAssociationsFilter) => throw null;
         public Agility.Sdk.Model.Capture.ClassificationGroupAssociations GetClassificationGroupAssociations(string sessionId, Agility.Sdk.Model.Capture.ClassificationGroupIdentity classificationGroupIdentity) => throw null;
+        public Agility.Sdk.Model.Capture.ClassificationGroupIdentityCollection GetAssociatedClassificationGroups(string sessionId, Agility.Sdk.Model.Capture.DocumentGroupIdentity documentGroupIdentity) => throw null;
         public Agility.Sdk.Model.Capture.Validation.ValidatorIdentity AddFieldValidator(string sessionId, Agility.Sdk.Model.Capture.Validation.GlobalFieldValidator fieldValidator) => throw null;
         public Agility.Sdk.Model.Capture.Validation.GlobalFieldValidator GetFieldValidator(string sessionId, Agility.Sdk.Model.Capture.Validation.ValidatorIdentity validatorIdentity) => throw null;
         public void UpdateFieldValidator(string sessionId, Agility.Sdk.Model.Capture.Validation.GlobalFieldValidator fieldValidator, bool overwrite) { }
