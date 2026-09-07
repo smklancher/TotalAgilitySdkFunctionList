@@ -14,6 +14,7 @@ namespace TotalAgility.Sdk
         public void LockQuickApp(string sessionId, Agility.Sdk.Model.QuickApps.QuickAppIdentity quickAppIdentity) { }
         public void UnlockQuickApp(string sessionId, Agility.Sdk.Model.QuickApps.QuickAppIdentity quickAppIdentity) { }
         public Agility.Sdk.Model.QuickApps.QuickAppAssociations GetQuickAppAssociations(string sessionId, Agility.Sdk.Model.QuickApps.QuickAppIdentity quickAppIdentity) => throw null;
+        public Agility.Sdk.Model.QuickApps.QuickAppAssociations GetQuickAppAssociations2(string sessionId, Agility.Sdk.Model.QuickApps.QuickAppIdentity quickAppIdentity, bool getNestedAssociations) => throw null;
         public Agility.Sdk.Model.QuickClassification.QuickClassificationInfo GetQuickClassificationInfo(string sessionId, Agility.Sdk.Model.Capture.ClassificationGroupIdentity classificationGroupIdentity) => throw null;
         public Agility.Sdk.Model.CaptureSolutions.Classification.ClassificationTrainingResultCollection AnalyzeQuickClassificationTraining(string sessionId, Agility.Sdk.Model.QuickClassification.QuickClassificationInfo quickClassificationInfo) => throw null;
         public Agility.Sdk.Model.QuickClassification.QuickClassificationInfo SaveQuickClassificationGroup(string sessionId, Agility.Sdk.Model.QuickClassification.QuickClassificationInfo quickClassificationInfo, short status) => throw null;

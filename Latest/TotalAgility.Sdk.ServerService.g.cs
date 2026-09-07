@@ -239,7 +239,7 @@ namespace TotalAgility.Sdk
         public Agility.Sdk.Model.Server.JsonPayload GenerateSdkJsonPayload(string sessionId, Agility.Sdk.Model.Component.DotNetMethodIdentity dotNetMethodIdentity) => throw null;
         public Agility.Sdk.Model.Tenants.PendingUpgradeConfiguration GetPendingUpgradeConfiguration(string sessionId, string currentClientProductVersion, short clientProductType) => throw null;
         public void ValidateCertificate(string sessionId, string base64Cert, string certPassword) { }
-        public Agility.Sdk.Model.AIProxyServices.AIProxyServiceInfo GetAIProxyServiceInfo(string sessionId, bool generateNewAPIKey) => throw null;
+        public Agility.Sdk.Model.AIProxyServices.AIProxyServiceInfo GetAIProxyServiceInfo(string sessionId, bool generateNewAPIKey, bool validateLLMLicenseTokens) => throw null;
         public Agility.Sdk.Model.Server.StationLicenseUsage GetStationLicenseUsage(string sessionId, Agility.Sdk.Model.Server.LicenseUsageFilter licenseUsageFilter) => throw null;
         public Agility.Sdk.Model.Server.VolumeLicenseUsage GetVolumeLicenseUsage(string sessionId, Agility.Sdk.Model.Server.LicenseUsageFilter licenseUsageFilter) => throw null;
     }

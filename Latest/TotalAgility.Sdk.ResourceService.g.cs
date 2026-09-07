@@ -111,6 +111,7 @@ namespace TotalAgility.Sdk
         public void UpdateWorkerResource2(string sessionId, Agility.Sdk.Model.Resources.WorkerResource2 resource, bool overwrite) { }
         public void UpdateWorkerResource3(string sessionId, Agility.Sdk.Model.Resources.WorkerResource2 resource, Agility.Sdk.Model.Resources.ResourceIdentityCollection addToGroups, Agility.Sdk.Model.Resources.ResourceIdentityCollection removeFromGroups, bool overwrite) { }
         public Agility.Sdk.Model.Resources.WorkerResource2 GetWorkerResource2(string sessionId, Agility.Sdk.Model.Resources.ResourceIdentity resource) => throw null;
+        public Agility.Sdk.Model.Resources.WorkerResource3 GetWorkerResource3(string sessionId, Agility.Sdk.Model.Resources.ResourceIdentity resource) => throw null;
         public void AddCaseParticipant3(string sessionId, Agility.Sdk.Model.Resources.CaseParticipant2 resource) { }
         public void UpdateCaseParticipant2(string sessionId, Agility.Sdk.Model.Resources.UpdatedCaseParticipant resource, bool overwrite) { }
         public Agility.Sdk.Model.Resources.CaseParticipant2 GetCaseParticipant(string sessionId, Agility.Sdk.Model.Resources.ResourceIdentity resource) => throw null;

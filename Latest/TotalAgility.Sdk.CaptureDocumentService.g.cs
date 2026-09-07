@@ -18,9 +18,11 @@ namespace TotalAgility.Sdk
         public Agility.Sdk.Model.Capture.FolderFieldValueCollection GetFolderFieldValues(string sessionId, Agility.Sdk.Model.Capture.ReportingData reportingData, string folderId, Agility.Sdk.Model.Capture.RuntimeFieldIdentityCollection fieldIdentities) => throw null;
         public Agility.Sdk.Model.Capture.FolderFieldValue GetFolderFieldValue(string sessionId, Agility.Sdk.Model.Capture.ReportingData reportingData, string folderId, Agility.Sdk.Model.Capture.RuntimeFieldIdentity fieldIdentity) => throw null;
         public Agility.Sdk.Model.Capture.Folder GetFolder(string sessionId, Agility.Sdk.Model.Capture.ReportingData reportingData, string folderId) => throw null;
+        public Agility.Sdk.Model.Capture.Folder2 GetFolder2(string sessionId, Agility.Sdk.Model.Capture.ReportingData reportingData, string folderId) => throw null;
         public Agility.Sdk.Model.Capture.FolderCollection SearchFolders(string sessionId, Agility.Sdk.Model.Capture.ReportingData reportingData, Agility.Sdk.Model.Capture.FolderSearchCriteria folderSearchCriteria) => throw null;
         public void UpdateDocumentFieldValues(string sessionId, Agility.Sdk.Model.Capture.ReportingData reportingData, string documentId, Agility.Sdk.Model.Capture.RuntimeFieldCollection runtimeFields) { }
         public void UpdateDocumentFieldValue(string sessionId, Agility.Sdk.Model.Capture.ReportingData reportingData, string documentId, Agility.Sdk.Model.Capture.RuntimeField runtimeField) { }
+        public void UpdateDocumentFieldPosition(string sessionId, Agility.Sdk.Model.Capture.ReportingData reportingData, string pageSnippetRectangleJson, string selectedFieldName) { }
         public void SetDocumentStatus(string sessionId, Agility.Sdk.Model.Capture.ReportingData reportingData, string documentId, short documentStatus, string message) { }
         public void SetFolderStatus(string sessionId, Agility.Sdk.Model.Capture.ReportingData reportingData, string folderId, short folderStatus, string message) { }
         public void MoveDocument(string sessionId, Agility.Sdk.Model.Capture.ReportingData reportingData, string documentId, string folderId, int insertIndex) { }
@@ -63,6 +65,7 @@ namespace TotalAgility.Sdk
         public void DeletePages(string sessionId, Agility.Sdk.Model.Capture.ReportingData reportingData, string documentId, Agility.Sdk.Model.Capture.PageIndexCollection pageIndexes) { }
         public Agility.Sdk.Model.Capture.DocumentSourceFile GetSourceFile(string sessionId, Agility.Sdk.Model.Capture.ReportingData reportingData, string documentId) => throw null;
         public Agility.Sdk.Model.Capture.Document GetDocument(string sessionId, Agility.Sdk.Model.Capture.ReportingData reportingData, string documentId) => throw null;
+        public Agility.Sdk.Model.Capture.Document2 GetDocument2(string sessionId, Agility.Sdk.Model.Capture.ReportingData reportingData, string documentId) => throw null;
         public Agility.Sdk.Model.Capture.DocumentCollection SearchDocuments(string sessionId, Agility.Sdk.Model.Capture.ReportingData reportingData, Agility.Sdk.Model.Capture.DocumentSearchCriteria documentSearchCriteria) => throw null;
         public Agility.Sdk.Model.Capture.Validation.ReviewValidationResult ValidateDocumentForReview(string sessionId, string documentId) => throw null;
         public Agility.Sdk.Model.Capture.Validation.ReviewValidationResult ValidateFolderForReview(string sessionId, string folderId) => throw null;
