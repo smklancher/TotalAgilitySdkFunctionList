@@ -142,5 +142,7 @@ namespace TotalAgility.Sdk
         public Agility.Sdk.Model.Processes.ProcessItemCollection GetProcessUnusedItems(string sessionId, Agility.Sdk.Model.Processes.ProcessIdentity processIdentity, Agility.Sdk.Model.Processes.ProcessItemCollection processItems) => throw null;
         public Agility.Sdk.Model.Processes.ProcessItemCollection GetSkinUnusedItems(string sessionId, Agility.Sdk.Model.Processes.ProcessIdentity processIdentity, Agility.Sdk.Model.Processes.ProcessItemCollection processItems) => throw null;
         public bool IsEventInUseInCaseOrFragments(string sessionId, Agility.Sdk.Model.CaseProcesses.CaseIdentity caseIdentity, string eventName) => throw null;
+        public Agility.Sdk.Model.Processes.ProcessAndSkinSummaries GetProcessAndSkinSummaries(string sessionId, Agility.Sdk.Model.Categories.CategoryIdentity categoryIdentity, short skinExportType) => throw null;
+        public Agility.Sdk.Model.Capture.DocumentTypeCollection GetDocumentTypesForSkin(string sessionId, Agility.Sdk.Model.Skins.SkinIdentity skinIdentity) => throw null;
     }
 }

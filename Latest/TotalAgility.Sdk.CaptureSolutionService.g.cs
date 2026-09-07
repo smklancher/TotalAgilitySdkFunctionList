@@ -21,10 +21,13 @@ namespace TotalAgility.Sdk
         public Agility.Sdk.Model.CaptureSolutions.Classification.ClassificationTrainingResultCollection AnalyzeClassificationTraining(string sessionId, Agility.Sdk.Model.CaptureSolutions.CaptureSolution captureSolution) => throw null;
         public Agility.Sdk.Model.CaptureSolutions.CaptureSolutionArtefacts GetAssociatedArtefacts(string sessionId, Agility.Sdk.Model.CaptureSolutions.CaptureSolutionIdentity captureSolutionIdentity) => throw null;
         public Agility.Sdk.Model.CaptureSolutions.Extraction.ExtractionTrainingResultCollection TrainAndExtract(string sessionId, string captureProjectId, Agility.Sdk.Model.CaptureSolutions.DocumentTypeCollection documentTypes) => throw null;
+        public Agility.Sdk.Model.CaptureSolutions.Extraction.ExtractionTrainingResultCollection TrainAndExtractWithSettings(string sessionId, string captureProjectId, Agility.Sdk.Model.CaptureSolutions.DocumentTypeCollection documentTypes, Agility.Sdk.Model.CaptureSolutions.ExtractionSettings settings) => throw null;
         public bool IsTransformationServerInstanceAvailable(string sessionId) => throw null;
         public Agility.Sdk.Model.CaptureSolutions.PredefinedDocumentTypeCollection GetPredefinedDocumentTypes(string sessionId) => throw null;
         public Agility.Sdk.Model.CaptureSolutions.Classification.ClassificationTestResultCollection TestClassification(string sessionId, Agility.Sdk.Model.CaptureSolutions.CaptureSolution captureSolution, Agility.Sdk.Model.CaptureSolutions.CaptureDocumentCollection testDocuments) => throw null;
         public Agility.Sdk.Model.CaptureSolutions.Extraction.DocumentTrainAndExtractResultCollection TestExtraction(string sessionId, Agility.Sdk.Model.CaptureSolutions.DocumentType documentType, Agility.Sdk.Model.CaptureSolutions.CaptureDocumentCollection testDocuments) => throw null;
+        public Agility.Sdk.Model.CaptureSolutions.Extraction.DocumentTrainAndExtractResultCollection TestExtractionWithSettings(string sessionId, Agility.Sdk.Model.CaptureSolutions.DocumentType documentType, Agility.Sdk.Model.CaptureSolutions.CaptureDocumentCollection testDocuments, Agility.Sdk.Model.CaptureSolutions.ExtractionSettings extractionSettings) => throw null;
         public Agility.Sdk.Model.CaptureSolutions.Extraction.DocumentTrainAndExtractResult DetectTables(string sessionId, string documentId) => throw null;
+        public Agility.Sdk.Model.CaptureSolutions.FuzzyLookup.RecordSet.FormattedRecordSet PreviewFuzzyLookupRecords(string sessionId, Agility.Sdk.Model.CaptureSolutions.FuzzyLookup.FuzzyLookupConfiguration configuration) => throw null;
     }
 }

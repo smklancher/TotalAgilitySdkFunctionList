@@ -42,5 +42,24 @@ namespace TotalAgility.Sdk
         public void AddMCPServer(string sessionId, Agility.Sdk.Model.Integration.MCP.MCPServer mcpServer) { }
         public void UpdateMCPServer(string sessionId, Agility.Sdk.Model.Integration.MCP.MCPServer mcpServer) { }
         public void DeleteMCPServer(string sessionId, Agility.Sdk.Model.Integration.IntegrationSiteIdentity integrationSiteIdentity) { }
+        public Agility.Sdk.Model.Integration.MCP.MCPToolCollection GetMCPServerTools(string sessionId, Agility.Sdk.Model.Integration.IntegrationSiteIdentity mcpServerIdentity) => throw null;
+        public string ExecuteMCPServerActivity(string sessionId, Agility.Sdk.Model.Integration.MCP.ToolCallData toolCallData) => throw null;
+        public Agility.Sdk.Model.Integration.GenerativeAI.GenerativeAIOutput GetGenerativeAIResult(string sessionId, Agility.Sdk.Model.Integration.GenerativeAI.GenerativeAIResultInputs generativeAIResultInputs) => throw null;
+        public Agility.Sdk.Model.Integration.RagAI.RagSearchResult GetKBSearchResult(string sessionId, Agility.Sdk.Model.Integration.RagAI.KBSearchResultInputs kbSearchResultInputs) => throw null;
+        public Agility.Sdk.Model.Integration.RagAI.BenchmarkPromptIdentity AddBenchmarkPrompt(string sessionId, Agility.Sdk.Model.Integration.RagAI.BenchmarkPrompt prompt) => throw null;
+        public void UpdateBenchmarkPrompt(string sessionId, Agility.Sdk.Model.Integration.RagAI.BenchmarkPrompt prompt) { }
+        public void DeleteBenchmarkPrompt(string sessionId, Agility.Sdk.Model.Integration.RagAI.BenchmarkPromptIdentity promptIdentity) { }
+        public Agility.Sdk.Model.Integration.RagAI.BenchmarkPrompt GetBenchmarkPrompt(string sessionId, Agility.Sdk.Model.Integration.RagAI.BenchmarkPromptIdentity promptIdentity) => throw null;
+        public Agility.Sdk.Model.Integration.RagAI.BenchmarkPromptsResponse GetBenchmarkPrompts(string sessionId, Agility.Sdk.Model.Integration.RagAI.BenchmarkPromptFilter filter) => throw null;
+        public Agility.Sdk.Model.Integration.RagAI.BenchmarkPromptResult ExecuteBenchmarkPrompt(string sessionId, string promptText, string kbProviderName, Agility.Sdk.Model.Integration.RagAI.KBProviderConfiguration config) => throw null;
+        public Agility.Sdk.Model.Integration.RagAI.BenchmarkTestIdentity AddBenchmarkTest(string sessionId, Agility.Sdk.Model.Integration.RagAI.BenchmarkTest test) => throw null;
+        public void UpdateBenchmarkTest(string sessionId, Agility.Sdk.Model.Integration.RagAI.BenchmarkTest test) { }
+        public void DeleteBenchmarkTest(string sessionId, Agility.Sdk.Model.Integration.RagAI.BenchmarkTestIdentity testIdentity) { }
+        public Agility.Sdk.Model.Integration.RagAI.BenchmarkTest GetBenchmarkTest(string sessionId, Agility.Sdk.Model.Integration.RagAI.BenchmarkTestIdentity testIdentity) => throw null;
+        public Agility.Sdk.Model.Integration.RagAI.BenchmarkTestsResponse GetBenchmarkTests(string sessionId, Agility.Sdk.Model.Integration.RagAI.BenchmarkTestFilter filter) => throw null;
+        public void UpdateBenchmarkTestStatus(string sessionId, Agility.Sdk.Model.Integration.RagAI.BenchmarkTestIdentity testIdentity, short status) { }
+        public void UpdateBenchmarkTestInfo(string sessionId, Agility.Sdk.Model.Integration.RagAI.BenchmarkTestUpdateInfo benchmarkTestUpdate) { }
+        public string AddBenchmarkTestResult(string sessionId, Agility.Sdk.Model.Integration.RagAI.BenchmarkTestResult result) => throw null;
+        public Agility.Sdk.Model.Integration.RagAI.BenchmarkTestResultsResponse GetBenchmarkTestResults(string sessionId, Agility.Sdk.Model.Integration.RagAI.BenchmarkTestResultFilter filter) => throw null;
     }
 }
